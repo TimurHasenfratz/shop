@@ -32,7 +32,7 @@
 
 
   <!--Navbar-->
-  <div class="flex  justify-center m-auto " >
+  <div class="flex  justify-center  " >
   <nav class="  space-x-10   dark:bg-slate-50   sm:justify-center div-container sm:mt-2 fixed top-0 grid   w-full    sm:w-fit  content-center justify-center items-center   sm:items-center  rounded-lg z-20 backdrop-blur-lg sm:p-[1em] bg-slate-900  bg-opacity-70 shadow-xl " id="navbar">
     
   <ul class=" grid grid-flow-col ">
@@ -210,20 +210,21 @@
 
 
 
-<div class="grid justify-center div-container m-4  "> 
-  <h1 class=" text-center text-2xl text-slate-50 mt-52  rounded-lg  p-2  ">Most Popular</h1>   <span class="  text-center text-slate-50 categories-btn material-symbols-outlined">
+<div class="grid  justify-center div-container  m-4  "> 
+  <h1 class=" text-center   text-2xl text-slate-50 mt-52  rounded-lg  p-2  ">Most Popular</h1>   <span class="  text-center text-slate-50 categories-btn material-symbols-outlined">
     expand_more
     </span>
-  <ul class="flex justify-center hidden content">
+  <ul class=" justify-center flex ">
 
-<li class="absolute overflow-auto overflow-y-scroll h-[100px] text-xl  rounded-lg  justify-center items-center text-slate-50 categories  ">
-  <button onclick="filterDivs('filterable')" class="bg-slate-800 w-full p-2">All</button>
+<li class="absolute overflow-auto overflow-y-scroll h-[100px] text-xl  rounded-lg  justify-center items-center text-slate-50 categories content hidden  ">
+  <button onclick="filterDivs('filterable')" class="bg-slate-800 w-full p-2">All</button>  
 <button onclick="filterDivs('red')" class="bg-slate-800 w-full p-2">Red</button>
 <button onclick="filterDivs('blue')" class="bg-slate-800 w-full p-2">Blue</button>
+
 <button onclick="filterDivs('sky')" class="bg-slate-800 w-full p-2">Sky</button>
-</li>
+  </li>
 </ul>
-</div>
+  </div>
 
 <!--Product Section-->
 <div class="   flex flex-wrap  justify-center mt-20 mb-20  gap-5  mx-4  "   >
@@ -1200,7 +1201,7 @@
   </div>
 
   <div class="grid justify-center space-y-2 bg-slate-100 p-2     rounded-lg   " >
-    <h2 class="">Contact us</h2>
+    <h class="">Contact us</h>
     <input type="text" value="" placeholder="User@Email.com" class="border border-slate-950 p-1 rounded-lg " autocomplete="on">
     <input type="text" value="" placeholder="Name" class="border border-slate-950 p-1 rounded-lg" autocomplete="on">
     <textarea name="" id="" cols="23" rows="7" class="border-teal-300 border-2 resize-none overflow-hidden" placeholder="Message"></textarea>
