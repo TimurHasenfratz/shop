@@ -190,3 +190,12 @@ button{
 span{
   cursor: pointer;
 }
+
+#mySize>ul>li>button{
+
+  categories-size-btn
+}
+
+.selected{
+  color:green !important;
+}

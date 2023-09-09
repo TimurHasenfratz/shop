@@ -68,68 +68,57 @@ function next()
 
 
 
-let ausgewaehlteFarbe = "Color";
+
+
+
+
+
+function hervorhebenAuswahl(button) {
+  const ul = button.closest('ul');
+  const buttons = ul.querySelectorAll('button');
+
+  buttons.forEach((btn) => {
+      if (btn === button) {
+          btn.classList.add('selected'); // Hervorheben des ausgewählten Buttons
+      } else {
+          btn.classList.remove('selected'); // Zurücksetzen der Klasse für andere Buttons
+      }
+  });
+}
+
 
 function ersetzeElement(button) {
-    const text = button.innerText;
-    ausgewaehlteFarbe = text;
+  const text = button.innerText;
 
-    // Holen Sie sich die Überschrift mit der ID "old" und aktualisieren Sie sie
-    const alteUeberschrift = document.getElementById("oldcolor");
-    alteUeberschrift.textContent = text;
+  // Holen Sie sich das übergeordnete Div des Buttons
+  const divContainer = button.closest('.div-container');
+  
+  // Holen Sie sich die Überschrift mit der ID "old" innerhalb des Divs
+  const alteUeberschrift = divContainer.querySelector("#oldcolor");
+  alteUeberschrift.textContent = text;
 
-    // Aktualisieren Sie den Text des ausgewählten Buttons und stellen Sie sicher, dass alle Buttons sichtbar sind
-    const liste = button.closest('ul');
-    const alleButtons = liste.querySelectorAll('button');
-    alleButtons.forEach((btn) => {
-        if (btn === button) {
-            btn.style.color = 'green'; // Betonen Sie den ausgewählten Button
-        } else {
-            btn.style.color = 'white'; // Setzen Sie die anderen Buttons zurück
-        }
-      
-    });
-}
-
-
-
-let ausgewaehlteGröße = "Size";
-
-function ersetzeSize(button) {
-    const text = button.innerText;
-    ausgewaehlteFarbe = text;
-
-    // Holen Sie sich die Überschrift mit der ID "old" und aktualisieren Sie sie
-    const alteUeberschrift = document.getElementById("oldsize");
-    alteUeberschrift.textContent = text;
-
-    // Aktualisieren Sie den Text des ausgewählten Buttons und stellen Sie sicher, dass alle Buttons sichtbar sind
-    const liste = button.closest('ul');
-    const alleButtons = liste.querySelectorAll('button');
-    alleButtons.forEach((btn) => {
-      if (btn === button) {
-          btn.style.color = 'green'; // Betonen Sie den ausgewählten Button
-      } else {
-          btn.style.color = 'white'; // Setzen Sie die anderen Buttons zurück
-      }
-    
-  });
-
-
-
-
+  hervorhebenAuswahl(button);
   
 
+  // ...
+
+  
 }
 
+function ersetzeSize(button) {
+  const text = button.innerText;
 
+  // Holen Sie sich das übergeordnete Div des Buttons
+  const divContainer = button.closest('.div-container');
+  
+  // Holen Sie sich die Überschrift mit der ID "oldsize" innerhalb des Divs
+  const alteUeberschrift = divContainer.querySelector("#oldsize");
+  alteUeberschrift.textContent = text;
+ 
+  hervorhebenAuswahl(button);
 
-
-
-
-
-
-
+  // ...
+}
 
 
 
