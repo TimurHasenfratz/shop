@@ -6,20 +6,7 @@
   }
 
   
-@font-face {
-    font-family: "ming1";
-    src: url(/Font/mingliu/MINGLIU.ttf);
-}
-@font-face {
 
-
-    font-family:ChakraPetch-BoldItalic;
-    src: url(/Fonts/ChakraPetch-BoldItalic.ttf);
-}
-@font-face {
-    font-family:ChakraPetch-Bold;
-    src: url(/Fonts/ChakraPetch-Bold.ttf);
-}
 
 
 
@@ -58,6 +45,7 @@ html{
   
    display: none;
    
+ 
 }
 
 

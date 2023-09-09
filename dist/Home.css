@@ -22,6 +22,10 @@ html{
   
 }
 
+ul>button{
+ font-size: 20px;
+}
+
 
 
   
@@ -58,6 +62,18 @@ html{
 .Size::-webkit-scrollbar {
     display: none;
 }
+.categories::-webkit-scrollbar {
+  display: none;
+}
+.categories>button:active{
+ color:green;
+ 
+} 
+.categories>button{
+  text-decoration:underline;
+  
+ } 
+
 
 /* Hide scrollbar for IE, Edge and Firefox */
 .Size {
@@ -117,9 +133,7 @@ span{
 
 
 
-image{
-  transition: 200ms ease-in-out;
-}
+
 .slider::-webkit-scrollbar {
 
   display: none;
@@ -134,7 +148,7 @@ image{
 
   font-variation-settings: 
   'FILL' 2,
-  'wght' 400,
+  'wght' 800,
   'GRAD' 0,
   'opsz' 58
  
@@ -163,3 +177,16 @@ button{
   transform: translatey(-1px);
  }
 
+
+
+.done{
+  font-size: 35px!important;
+
+}
+
+
+
+
+span{
+  cursor: pointer;
+}
