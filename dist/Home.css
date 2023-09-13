@@ -75,10 +75,10 @@ ul>button{
  } 
 
 
-/* Hide scrollbar for IE, Edge and Firefox */
+/* Hide scrollbar */
 .Size {
-  -ms-overflow-style: none;  /* IE and Edge */
-  scrollbar-width: none;  /* Firefox */
+  -ms-overflow-style: none;  
+  scrollbar-width: none;  
   text-decoration: underline;
   
   
@@ -119,9 +119,9 @@ nav{
 }
 
 .picc{
-  background-image: url(/Images/snk/tt/pexels-jordan-hyde-1070360.jpg);
+  background-image: url('Images/snk/tt/pexels-jordan-hyde-1070360.jpg');
   
-  height: 500px;
+  height: 600px;
   
   
 }

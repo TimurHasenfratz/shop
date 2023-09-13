@@ -1,4 +1,4 @@
-// navbar dissapears on scrolldown and reappears on scrollup
+// navbar dissapears on scrolldown and appears on scrollup
 
 var prevScrollpos = window.pageYOffset;
 window.onscroll = function () {
@@ -61,9 +61,9 @@ function hervorhebenAuswahl(button) {
 
   buttons.forEach((btn) => {
     if (btn === button) {
-      btn.classList.add("selected"); // Hervorheben des ausgewählten Buttons
+      btn.classList.add("selected"); // add class with color for selected button
     } else {
-      btn.classList.remove("selected"); // Zurücksetzen der Klasse für andere Buttons
+      btn.classList.remove("selected"); // remove class from button
     }
   });
 }
@@ -71,25 +71,25 @@ function hervorhebenAuswahl(button) {
 function ersetzeElement(button) {
   const text = button.innerText;
 
-  // Holen Sie sich das übergeordnete Div des Buttons
+  // get parent div of button
   const divContainer = button.closest(".div-container");
 
-  // Holen Sie sich die Überschrift mit der ID "old" innerhalb des Divs
+  // get headline with id
   const alteUeberschrift = divContainer.querySelector("#oldcolor");
   alteUeberschrift.textContent = text;
 
   hervorhebenAuswahl(button);
 
-  // ...
+  
 }
 
 function ersetzeSize(button) {
   const text = button.innerText;
 
-  // Holen Sie sich das übergeordnete Div des Buttons
+  // get parent div
   const divContainer = button.closest(".div-container");
 
-  // Holen Sie sich die Überschrift mit der ID "oldsize" innerhalb des Divs
+  // get headline with id #oldsize
   const alteUeberschrift = divContainer.querySelector("#oldsize");
   alteUeberschrift.textContent = text;
 
@@ -101,16 +101,16 @@ function ersetzeSize(button) {
 //FilterDivs
 
 function filterDivs(className) {
-  const divs = document.querySelectorAll(".filterable"); // Alle filterbaren Div-Elemente auswählen
+  const divs = document.querySelectorAll(".filterable"); // all filterable divs
 
-  // Alle Div-Elemente ausblenden
+  // all divs none
   divs.forEach((div) => {
     div.style.display = "none";
   });
 
-  // Nur die Div-Elemente mit der gewünschten Klasse anzeigen
+  // only div with selected class
   if (className === "filterable") {
-    // Alle anzeigen
+    // show all
     divs.forEach((div) => {
       div.style.display = "block";
     });
