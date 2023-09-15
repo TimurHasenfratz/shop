@@ -65,10 +65,7 @@ ul>button{
 .categories::-webkit-scrollbar {
   display: none;
 }
-.categories>button:active{
- color:green;
- 
-} 
+
 .categories>button{
   text-decoration:underline;
   
