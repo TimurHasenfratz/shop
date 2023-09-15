@@ -1,23 +1,6 @@
 
 
 
-function myFunction() {
-    var x = document.getElementById("myCOLOR");
-    if (x.style.display === "none") {
-      x.style.display = "block";
-    } else {
-      x.style.display = "none";
-    }
-  }
-
-  function myyyFunction() {
-    var x = document.getElementById("mySIZE");
-    if (x.style.display === "none") {
-      x.style.display = "block";
-    } else {
-      x.style.display = "none";
-    }
-  }
 
   var prevScrollpos = window.pageYOffset;
 window.onscroll = function() {
@@ -34,14 +17,6 @@ window.onscroll = function() {
 
 
 
-function myyFunction() {
-  var x = document.getElementById("purchased");
-  if (x.style.display === "none") {
-    x.style.display = "block";
-  } else {
-    x.style.display = "none";
-  }
-}
 
 
 
@@ -55,3 +30,23 @@ function passwordToggle() {
   }
   
  
+
+  function handleButtonClick(event) {
+    const container = event.target.closest(".div-container");
+    const content = container.querySelector(".content");
+
+
+
+  if (event.target.classList.contains("menu-btn")) 
+      content.style.display = content.style.display === "none" ? "block" : "none";
+  }
+
+
+  document.addEventListener("click", function (event) {
+    if (
+      event.target.classList.contains("menu-btn")
+
+      ) {
+        handleButtonClick(event);
+      }
+    });
