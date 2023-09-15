@@ -42,25 +42,6 @@
         <li class="   sm:flex  justify-center  tracking-widest  w-full  items-center grid text-center  ">
 
 
-            <a href="" class="  m-1
-            px-10
-           
-            rounded-lg
-              p-3
-            
-               text-slate-50
-            
-            
-
-               
-            cursor-default
-              
-              text-2xl 
-              
-             
-              "
-              >Sneakii</a>
-
 
  
             <a href="#" class="
@@ -144,10 +125,7 @@
       </a>
     
 
-      
-      <button class="theme text-slate-50 text-2xl p-2 m-1 border-2 border-teal-400 rounded-lg hover:text-slate-900 hover:bg-slate-50 hover:shadow-lg hover:shadow-teal-300" id="toggle" onclick="theme()"><span class="material-symbols-outlined ">
-        light_mode
-        </span></button>
+    
 
 
 
@@ -210,18 +188,27 @@
 
 
 <!--Filter function-->
-<div class="grid  justify-center div-container  m-4  "> 
+<div class="grid  justify-center items-center  div-container   "> 
   <h1 class=" text-center   text-2xl text-slate-50 mt-52  rounded-lg  p-2  ">Most Popular</h1>   <span class="  text-center text-slate-50 categories-btn material-symbols-outlined">
     expand_more
     </span>
-  <ul class=" justify-center flex ">
+  <ul class=" justify-center grid relative  ">
 
-<li class="absolute overflow-auto overflow-y-scroll h-[100px] text-xl  rounded-lg  justify-center items-center text-slate-50 categories content hidden  ">
+<li class="absolute overflow-auto overflow-y-scroll h-[100px] text-xl  rounded-lg  justify-center items-center text-slate-50 categories content hidden border-2 border-teal-400  ">
   <button onclick="filterDivs('filterable')" class="bg-slate-800 w-full p-2">All</button>  
 <button onclick="filterDivs('red')" class="bg-slate-800 w-full p-2">Red</button>
 <button onclick="filterDivs('blue')" class="bg-slate-800 w-full p-2">Blue</button>
 
-<button onclick="filterDivs('sky')" class="bg-slate-800 w-full p-2">Sky</button>
+<button onclick="filterDivs('black')" class="bg-slate-800 w-full p-2">Black</button>
+
+<button onclick="filterDivs('yellow')" class="bg-slate-800 w-full p-2">Yellow</button>
+
+<button onclick="filterDivs('white')" class="bg-slate-800 w-full p-2">Sky</button>
+<button onclick="filterDivs('orange')" class="bg-slate-800 w-full p-2">Orange</button>
+<button onclick="filterDivs('pink')" class="bg-slate-800 w-full p-2">Pink</button>
+<button onclick="filterDivs('purple')" class="bg-slate-800 w-full p-2">Purple</button>
+<button onclick="filterDivs('gray')" class="bg-slate-800 w-full p-2">Gray</button>
+<button onclick="filterDivs('custom')" class="bg-slate-800 w-full p-2">Custom</button>
   </li>
 </ul>
   </div>
@@ -293,11 +280,11 @@
             <div class=" content  hidden relative  z-50  " id="myCOLOR">
               
               <ul class="  border-solid border-2 border-teal-600 Colors  w-full   grid overflow-auto h-[100px]  absolute justify-center text-2xl  space-y-5  bg-slate-800 rounded-br-xl p-4  z-50 text-white   ">
-                <button href="" class="hover:text-teal-400  " onclick="ersetzeElement(this)">Blue/Sky</button>
-                <button href="" class="hover:text-teal-400" onclick="ersetzeElement(this)">Red</button>
-                <button href="" class="hover:text-teal-400"onclick="ersetzeElement(this)">White/Black</button>
-                <button href="" class="hover:text-teal-400"onclick="ersetzeElement(this)">Pink</button>
-                <button href="" class="hover:text-teal-400"onclick="ersetzeElement(this)">White/Orange</button>
+                <button href="" class="hover:text-teal-400  " onclick="ersetzeColor(this)">Blue/Sky</button>
+                <button href="" class="hover:text-teal-400" onclick="ersetzeColor(this)">Red</button>
+                <button href="" class="hover:text-teal-400"onclick="ersetzeColor(this)">White/Black</button>
+                <button href="" class="hover:text-teal-400"onclick="ersetzeColor(this)">Pink</button>
+                <button href="" class="hover:text-teal-400"onclick="ersetzeColor(this)">White/Orange</button>
                
               </ul>
             </div>
@@ -318,702 +305,963 @@
             
   </div>
 
-    <!--Product-->
-    <div class="  grid  justify-center p-4 m-2  backdrop-blur-lg    drop-shadow-2xl hover:translate-y-[-4px] transition-transform  filterable red  ">
+ <!--Product-->
+ <div class="  grid  justify-center p-4 m-2  backdrop-blur-lg    drop-shadow-2xl hover:translate-y-[-4px] transition-transform filterable blue orange   ">
     
-      <div class=" bg-slate-5 div-container   prod container group relative  rounded-t-3xl group ">
-       
-        <span  class="  content toggle-heart  material-symbols-outlined group-hover:translate-x-[-2px] Heart  transition-[0.8s]  absolute m-auto   sm:ml-[93%] ml-[88%]  p-[0.5%]    z-10 text-red-500 sm:invisible hover:translate-y-[-2px] cursor-pointer text-3xl  group-hover:visible heart-like   ">
-          favorite
-          </span>
-       
-          <a href="#">
-        <img src="Images/snk/branislav-belko-lJ7iAZxplpc-unsplash.jpg" loading="lazy"  alt="" class="  w-full h-[300px] sm:w-[550px] sm:h-[630px] object-cover rounded-t-2xl  shadow-xl drop-shadow-xl group " >
-      </a>
-      </div>
+  <div class=" bg-slate-5 div-container   prod container group relative  rounded-t-3xl group ">
    
-        <div class="  text-blue-950 text-2xl space-y-5 p-2 bg-slate-100 pt-10  ">
-            <p class="text-center  ">Nike Air Jordan Sneaker</p>
-            <p class="text-center font-bold text-4xl  py-2    " >90€</p> 
+    <span  class="  content toggle-heart  material-symbols-outlined group-hover:translate-x-[-2px] Heart  transition-[0.8s]  absolute m-auto   sm:ml-[93%] ml-[88%]  p-[0.5%]    z-10 text-red-500 sm:invisible hover:translate-y-[-2px] cursor-pointer text-3xl  group-hover:visible heart-like   ">
+      favorite
+      </span>
+   
+      <a href="#">
+    <img src="Images/snk/erik-mclean-SSb8DT51hX8-unsplash.jpg" loading="lazy"  alt="" class="  w-full h-[300px] sm:w-[550px] sm:h-[630px] object-cover rounded-t-2xl  shadow-xl drop-shadow-xl group " >
+  </a>
+  </div>
+
+    <div class="  text-blue-950 text-2xl space-y-5 p-2 bg-slate-100 pt-10  ">
+        <p class="text-center  ">Nike Air Jordan Sneaker</p>
+        <p class="text-center font-bold text-4xl  py-2    " >90€</p> 
+        
+
+    </div>
+
+    <div class="  grid grid-cols-2 text-center text-2xl  justify-center text-blue-950 bg-slate-100  ">
+      <div class=" div-container">
+            <h2 class="  p-2" id="oldsize">Size   
+              <button  class="  ">
+           
+              </button> 
             
-  
-        </div>
-  
-        <div class="  grid grid-cols-2 text-center text-2xl  justify-center text-blue-950 bg-slate-100  ">
-          <div class=" div-container">
-                <h2 class="  p-2" id="oldsize">Size   
-                  <button  class="  ">
-               
-                  </button> 
-                
-                </h2>
-                <span class="  size-btn material-symbols-outlined">
-                  expand_more
-                  </span>
-  
-                <div class="  hidden  transition-opacity duration-300 content relative" id="mySIZE" >
-                    <ul class="Size w-full border-solid ease-in-out border-2 border-teal-600 overflow-auto h-[100px] grid justify-center absolute   space-y-5  bg-slate-800 rounded-bl-xl p-4  z-50 text-white " id="menuList">
-                      <button href="" class="hover:text-teal-400   " onclick="ersetzeSize(this)">37</button>
-                      <button href="" class="hover:text-teal-400 " onclick="ersetzeSize(this)">38</button>
-                      <button href="" class="hover:text-teal-400  " onclick="ersetzeSize(this)">39</button>
-                      <button href="" class="hover:text-teal-400  " onclick="ersetzeSize(this)">40</button>
-                      <button href="" class="hover:text-teal-400  " onclick="ersetzeSize(this)">41</button>
-                      <button href="" class="hover:text-teal-400  " onclick="ersetzeSize(this)">42</button>
-                      <button href="" class="hover:text-teal-400  " onclick="ersetzeSize(this)">43</button>
-                      <button href="" class="hover:text-teal-400  " onclick="ersetzeSize(this)">44</button>
-                    </ul>
-                  </div>
-                </div>
-  
-  
-                <div class="div-container ">
-  
-              
-              <h2 class="  p-2" id="oldcolor">Color
-             
-              </h2>
-              <span class="material-symbols-outlined color-btn ">
-                expand_more
-                </span>
-               
-  
-              <div class=" content  hidden relative  z-50  " id="myCOLOR">
-                
-                <ul class="  border-solid border-2 border-teal-600 Colors  w-full   grid overflow-auto h-[100px]  absolute justify-center text-2xl  space-y-5  bg-slate-800 rounded-br-xl p-4  z-50 text-white   ">
-                  <button href="" class="hover:text-teal-400  " onclick="ersetzeElement(this)">Blue/Sky</button>
-                  <button href="" class="hover:text-teal-400" onclick="ersetzeElement(this)">Red</button>
-                  <button href="" class="hover:text-teal-400"onclick="ersetzeElement(this)">White/Black</button>
-                  <button href="" class="hover:text-teal-400"onclick="ersetzeElement(this)">Pink</button>
-                  <button href="" class="hover:text-teal-400"onclick="ersetzeElement(this)">White/Orange</button>
-                 
+            </h2>
+            <span class="  size-btn material-symbols-outlined">
+              expand_more
+              </span>
+
+            <div class="  hidden  transition-opacity duration-300 content relative" id="mySIZE" >
+                <ul class="Size w-full border-solid ease-in-out border-2 border-teal-600 overflow-auto h-[100px] grid justify-center absolute   space-y-5  bg-slate-800 rounded-bl-xl p-4  z-50 text-white " id="menuList">
+                  <button href="" class="hover:text-teal-400   " onclick="ersetzeSize(this)">37</button>
+                  <button href="" class="hover:text-teal-400 " onclick="ersetzeSize(this)">38</button>
+                  <button href="" class="hover:text-teal-400  " onclick="ersetzeSize(this)">39</button>
+                  <button href="" class="hover:text-teal-400  " onclick="ersetzeSize(this)">40</button>
+                  <button href="" class="hover:text-teal-400  " onclick="ersetzeSize(this)">41</button>
+                  <button href="" class="hover:text-teal-400  " onclick="ersetzeSize(this)">42</button>
+                  <button href="" class="hover:text-teal-400  " onclick="ersetzeSize(this)">43</button>
+                  <button href="" class="hover:text-teal-400  " onclick="ersetzeSize(this)">44</button>
                 </ul>
               </div>
             </div>
-            </div>
-            <div class="div-container flex relative bg-slate-900 ">
-         
-            <button type="button"   class=" w-full purchase-btn    text-2xl sm:text-4xl p-3 text-white hover:text-teal-500 tracking-[7px] Buy "> Add To Card   
-              <span class="material-symbols-outlined ">
-                shopping_cart    
-                
-                </span>  
-              </button>
-              <span class=" content material-symbols-outlined  text-teal-500 bg-gray-900 mx-[82%] my-[5%]  absolute sm:mx-[75%] text-5xl sm:my-[2%] done " id="purchased">
-                done
-                </span>
-            </div>
-              
-    </div>
 
-      <!--Product-->
-  <div class="  grid  justify-center p-4 m-2  backdrop-blur-lg    drop-shadow-2xl hover:translate-y-[-4px] transition-transform   filterable sky  ">
-    
-    <div class=" bg-slate-5 div-container   prod container group relative  rounded-t-3xl group ">
-     
-      <span  class="  content toggle-heart  material-symbols-outlined group-hover:translate-x-[-2px] Heart  transition-[0.8s]  absolute m-auto   sm:ml-[93%] ml-[88%]  p-[0.5%]    z-10 text-red-500 sm:invisible hover:translate-y-[-2px] cursor-pointer text-3xl  group-hover:visible heart-like   ">
-        favorite
-        </span>
-     
-        <a href="#">
-      <img src="Images/snk/branislav-belko-lJ7iAZxplpc-unsplash.jpg" loading="lazy"  alt="" class="  w-full h-[300px] sm:w-[550px] sm:h-[630px] object-cover rounded-t-2xl  shadow-xl drop-shadow-xl group " >
-    </a>
-    </div>
- 
-      <div class="  text-blue-950 text-2xl space-y-5 p-2 bg-slate-100 pt-10  ">
-          <p class="text-center  ">Nike Air Jordan Sneaker</p>
-          <p class="text-center font-bold text-4xl  py-2    " >90€</p> 
+
+            <div class="div-container ">
+
           
-
-      </div>
-
-      <div class="  grid grid-cols-2 text-center text-2xl  justify-center text-blue-950 bg-slate-100  ">
-        <div class=" div-container">
-              <h2 class="  p-2" id="oldsize">Size   
-                <button  class="  ">
-             
-                </button> 
-              
-              </h2>
-              <span class="  size-btn material-symbols-outlined">
-                expand_more
-                </span>
-
-              <div class="  hidden  transition-opacity duration-300 content relative" id="mySIZE" >
-                  <ul class="Size w-full border-solid ease-in-out border-2 border-teal-600 overflow-auto h-[100px] grid justify-center absolute   space-y-5  bg-slate-800 rounded-bl-xl p-4  z-50 text-white " id="menuList">
-                    <button href="" class="hover:text-teal-400   " onclick="ersetzeSize(this)">37</button>
-                    <button href="" class="hover:text-teal-400 " onclick="ersetzeSize(this)">38</button>
-                    <button href="" class="hover:text-teal-400  " onclick="ersetzeSize(this)">39</button>
-                    <button href="" class="hover:text-teal-400  " onclick="ersetzeSize(this)">40</button>
-                    <button href="" class="hover:text-teal-400  " onclick="ersetzeSize(this)">41</button>
-                    <button href="" class="hover:text-teal-400  " onclick="ersetzeSize(this)">42</button>
-                    <button href="" class="hover:text-teal-400  " onclick="ersetzeSize(this)">43</button>
-                    <button href="" class="hover:text-teal-400  " onclick="ersetzeSize(this)">44</button>
-                  </ul>
-                </div>
-              </div>
-
-
-              <div class="div-container ">
-
-            
-            <h2 class="  p-2" id="oldcolor">Color
+          <h2 class="  p-2" id="oldcolor">Color
+         
+          </h2>
+          <span class="material-symbols-outlined color-btn ">
+            expand_more
+            </span>
            
-            </h2>
-            <span class="material-symbols-outlined color-btn ">
-              expand_more
-              </span>
-             
 
-            <div class=" content  hidden relative  z-50  " id="myCOLOR">
-              
-              <ul class="  border-solid border-2 border-teal-600 Colors  w-full   grid overflow-auto h-[100px]  absolute justify-center text-2xl  space-y-5  bg-slate-800 rounded-br-xl p-4  z-50 text-white   ">
-                <button href="" class="hover:text-teal-400  " onclick="ersetzeElement(this)">Blue/Sky</button>
-                <button href="" class="hover:text-teal-400" onclick="ersetzeElement(this)">Red</button>
-                <button href="" class="hover:text-teal-400"onclick="ersetzeElement(this)">White/Black</button>
-                <button href="" class="hover:text-teal-400"onclick="ersetzeElement(this)">Pink</button>
-                <button href="" class="hover:text-teal-400"onclick="ersetzeElement(this)">White/Orange</button>
-               
-              </ul>
-            </div>
-          </div>
-          </div>
-          <div class="div-container flex relative bg-slate-900 ">
-       
-          <button type="button"   class=" w-full purchase-btn    text-2xl sm:text-4xl p-3 text-white hover:text-teal-500 tracking-[7px] Buy "> Add To Card   
-            <span class="material-symbols-outlined ">
-              shopping_cart    
-              
-              </span>  
-            </button>
-            <span class=" content material-symbols-outlined  text-teal-500 bg-gray-900 mx-[82%] my-[5%]  absolute sm:mx-[75%] text-5xl sm:my-[2%] done " id="purchased">
-              done
-              </span>
-          </div>
+          <div class=" content  hidden relative  z-50  " id="myCOLOR">
             
+            <ul class="  border-solid border-2 border-teal-600 Colors  w-full   grid overflow-auto h-[100px]  absolute justify-center text-2xl  space-y-5  bg-slate-800 rounded-br-xl p-4  z-50 text-white   ">
+              <button href="" class="hover:text-teal-400  " onclick="ersetzeColor(this)">Blue/Sky</button>
+              <button href="" class="hover:text-teal-400" onclick="ersetzeColor(this)">Red</button>
+              <button href="" class="hover:text-teal-400"onclick="ersetzeColor(this)">White/Black</button>
+              <button href="" class="hover:text-teal-400"onclick="ersetzeColor(this)">Pink</button>
+              <button href="" class="hover:text-teal-400"onclick="ersetzeColor(this)">White/Orange</button>
+             
+            </ul>
+          </div>
+        </div>
+        </div>
+        <div class="div-container flex relative bg-slate-900 ">
+     
+        <button type="button"   class=" w-full purchase-btn    text-2xl sm:text-4xl p-3 text-white hover:text-teal-500 tracking-[7px] Buy "> Add To Card   
+          <span class="material-symbols-outlined ">
+            shopping_cart    
+            
+            </span>  
+          </button>
+          <span class=" content material-symbols-outlined  text-teal-500 bg-gray-900 mx-[82%] my-[5%]  absolute sm:mx-[75%] text-5xl sm:my-[2%] done " id="purchased">
+            done
+            </span>
+        </div>
+          
+</div>
+ <!--Product-->
+<div class="  grid  justify-center p-4 m-2  backdrop-blur-lg    drop-shadow-2xl hover:translate-y-[-4px] transition-transform filterable red  ">
+    
+  <div class=" bg-slate-5 div-container   prod container group relative  rounded-t-3xl group ">
+   
+    <span  class="  content toggle-heart  material-symbols-outlined group-hover:translate-x-[-2px] Heart  transition-[0.8s]  absolute m-auto   sm:ml-[93%] ml-[88%]  p-[0.5%]    z-10 text-red-500 sm:invisible hover:translate-y-[-2px] cursor-pointer text-3xl  group-hover:visible heart-like   ">
+      favorite
+      </span>
+   
+      <a href="#">
+    <img src="Images/snk/joel-muniz-bS_1xFUPgWU-unsplash.jpg" loading="lazy"  alt="" class="  w-full h-[300px] sm:w-[550px] sm:h-[630px] object-cover rounded-t-2xl  shadow-xl drop-shadow-xl group " >
+  </a>
   </div>
 
-    <!--Product-->
-    <div class="  grid  justify-center p-4 m-2  backdrop-blur-lg    drop-shadow-2xl hover:translate-y-[-4px] transition-transform   filterable blue ">
-    
-      <div class=" bg-slate-5 div-container   prod container group relative  rounded-t-3xl group ">
-       
-        <span  class="  content toggle-heart  material-symbols-outlined group-hover:translate-x-[-2px] Heart  transition-[0.8s]  absolute m-auto   sm:ml-[93%] ml-[88%]  p-[0.5%]    z-10 text-red-500 sm:invisible hover:translate-y-[-2px] cursor-pointer text-3xl  group-hover:visible heart-like   ">
-          favorite
-          </span>
-       
-          <a href="#">
-        <img src="Images/snk/branislav-belko-lJ7iAZxplpc-unsplash.jpg" loading="lazy"  alt="" class="  w-full h-[300px] sm:w-[550px] sm:h-[630px] object-cover rounded-t-2xl  shadow-xl drop-shadow-xl group " >
-      </a>
-      </div>
-   
-        <div class="  text-blue-950 text-2xl space-y-5 p-2 bg-slate-100 pt-10  ">
-            <p class="text-center  ">Nike Air Jordan Sneaker</p>
-            <p class="text-center font-bold text-4xl  py-2    " >90€</p> 
+    <div class="  text-blue-950 text-2xl space-y-5 p-2 bg-slate-100 pt-10  ">
+        <p class="text-center  ">Nike Air Jordan Sneaker</p>
+        <p class="text-center font-bold text-4xl  py-2    " >90€</p> 
+        
+
+    </div>
+
+    <div class="  grid grid-cols-2 text-center text-2xl  justify-center text-blue-950 bg-slate-100  ">
+      <div class=" div-container">
+            <h2 class="  p-2" id="oldsize">Size   
+              <button  class="  ">
+           
+              </button> 
             
-  
-        </div>
-  
-        <div class="  grid grid-cols-2 text-center text-2xl  justify-center text-blue-950 bg-slate-100  ">
-          <div class=" div-container">
-                <h2 class="  p-2" id="oldsize">Size   
-                  <button  class="  ">
-               
-                  </button> 
-                
-                </h2>
-                <span class="  size-btn material-symbols-outlined">
-                  expand_more
-                  </span>
-  
-                <div class="  hidden  transition-opacity duration-300 content relative" id="mySIZE" >
-                    <ul class="Size w-full border-solid ease-in-out border-2 border-teal-600 overflow-auto h-[100px] grid justify-center absolute   space-y-5  bg-slate-800 rounded-bl-xl p-4  z-50 text-white " id="menuList">
-                      <button href="" class="hover:text-teal-400   " onclick="ersetzeSize(this)">37</button>
-                      <button href="" class="hover:text-teal-400 " onclick="ersetzeSize(this)">38</button>
-                      <button href="" class="hover:text-teal-400  " onclick="ersetzeSize(this)">39</button>
-                      <button href="" class="hover:text-teal-400  " onclick="ersetzeSize(this)">40</button>
-                      <button href="" class="hover:text-teal-400  " onclick="ersetzeSize(this)">41</button>
-                      <button href="" class="hover:text-teal-400  " onclick="ersetzeSize(this)">42</button>
-                      <button href="" class="hover:text-teal-400  " onclick="ersetzeSize(this)">43</button>
-                      <button href="" class="hover:text-teal-400  " onclick="ersetzeSize(this)">44</button>
-                    </ul>
-                  </div>
-                </div>
-  
-  
-                <div class="div-container ">
-  
-              
-              <h2 class="  p-2" id="oldcolor">Color
-             
-              </h2>
-              <span class="material-symbols-outlined color-btn ">
-                expand_more
-                </span>
-               
-  
-              <div class=" content  hidden relative  z-50  " id="myCOLOR">
-                
-                <ul class="  border-solid border-2 border-teal-600 Colors  w-full   grid overflow-auto h-[100px]  absolute justify-center text-2xl  space-y-5  bg-slate-800 rounded-br-xl p-4  z-50 text-white   ">
-                  <button href="" class="hover:text-teal-400  " onclick="ersetzeElement(this)">Blue/Sky</button>
-                  <button href="" class="hover:text-teal-400" onclick="ersetzeElement(this)">Red</button>
-                  <button href="" class="hover:text-teal-400"onclick="ersetzeElement(this)">White/Black</button>
-                  <button href="" class="hover:text-teal-400"onclick="ersetzeElement(this)">Pink</button>
-                  <button href="" class="hover:text-teal-400"onclick="ersetzeElement(this)">White/Orange</button>
-                 
+            </h2>
+            <span class="  size-btn material-symbols-outlined">
+              expand_more
+              </span>
+
+            <div class="  hidden  transition-opacity duration-300 content relative" id="mySIZE" >
+                <ul class="Size w-full border-solid ease-in-out border-2 border-teal-600 overflow-auto h-[100px] grid justify-center absolute   space-y-5  bg-slate-800 rounded-bl-xl p-4  z-50 text-white " id="menuList">
+                  <button href="" class="hover:text-teal-400   " onclick="ersetzeSize(this)">37</button>
+                  <button href="" class="hover:text-teal-400 " onclick="ersetzeSize(this)">38</button>
+                  <button href="" class="hover:text-teal-400  " onclick="ersetzeSize(this)">39</button>
+                  <button href="" class="hover:text-teal-400  " onclick="ersetzeSize(this)">40</button>
+                  <button href="" class="hover:text-teal-400  " onclick="ersetzeSize(this)">41</button>
+                  <button href="" class="hover:text-teal-400  " onclick="ersetzeSize(this)">42</button>
+                  <button href="" class="hover:text-teal-400  " onclick="ersetzeSize(this)">43</button>
+                  <button href="" class="hover:text-teal-400  " onclick="ersetzeSize(this)">44</button>
                 </ul>
               </div>
             </div>
-            </div>
-            <div class="div-container flex relative bg-slate-900 ">
-         
-            <button type="button"   class=" w-full purchase-btn    text-2xl sm:text-4xl p-3 text-white hover:text-teal-500 tracking-[7px] Buy "> Add To Card   
-              <span class="material-symbols-outlined ">
-                shopping_cart    
-                
-                </span>  
-              </button>
-              <span class=" content material-symbols-outlined  text-teal-500 bg-gray-900 mx-[82%] my-[5%]  absolute sm:mx-[75%] text-5xl sm:my-[2%] done " id="purchased">
-                done
-                </span>
-            </div>
-              
-    </div>
 
-      <!--Product-->
-  <div class="  grid  justify-center p-4 m-2  backdrop-blur-lg    drop-shadow-2xl hover:translate-y-[-4px] transition-transform  filterable blue  ">
-    
-    <div class=" bg-slate-5 div-container   prod container group relative  rounded-t-3xl group ">
-     
-      <span  class="  content toggle-heart  material-symbols-outlined group-hover:translate-x-[-2px] Heart  transition-[0.8s]  absolute m-auto   sm:ml-[93%] ml-[88%]  p-[0.5%]    z-10 text-red-500 sm:invisible hover:translate-y-[-2px] cursor-pointer text-3xl  group-hover:visible heart-like   ">
-        favorite
-        </span>
-     
-        <a href="#">
-      <img src="Images/snk/branislav-belko-lJ7iAZxplpc-unsplash.jpg" loading="lazy"  alt="" class="  w-full h-[300px] sm:w-[550px] sm:h-[630px] object-cover rounded-t-2xl  shadow-xl drop-shadow-xl group " >
-    </a>
-    </div>
- 
-      <div class="  text-blue-950 text-2xl space-y-5 p-2 bg-slate-100 pt-10  ">
-          <p class="text-center  ">Nike Air Jordan Sneaker</p>
-          <p class="text-center font-bold text-4xl  py-2    " >90€</p> 
+
+            <div class="div-container ">
+
           
-
-      </div>
-
-      <div class="  grid grid-cols-2 text-center text-2xl  justify-center text-blue-950 bg-slate-100  ">
-        <div class=" div-container">
-              <h2 class="  p-2" id="oldsize">Size   
-                <button  class="  ">
-             
-                </button> 
-              
-              </h2>
-              <span class="  size-btn material-symbols-outlined">
-                expand_more
-                </span>
-
-              <div class="  hidden  transition-opacity duration-300 content relative" id="mySIZE" >
-                  <ul class="Size w-full border-solid ease-in-out border-2 border-teal-600 overflow-auto h-[100px] grid justify-center absolute   space-y-5  bg-slate-800 rounded-bl-xl p-4  z-50 text-white " id="menuList">
-                    <button href="" class="hover:text-teal-400   " onclick="ersetzeSize(this)">37</button>
-                    <button href="" class="hover:text-teal-400 " onclick="ersetzeSize(this)">38</button>
-                    <button href="" class="hover:text-teal-400  " onclick="ersetzeSize(this)">39</button>
-                    <button href="" class="hover:text-teal-400  " onclick="ersetzeSize(this)">40</button>
-                    <button href="" class="hover:text-teal-400  " onclick="ersetzeSize(this)">41</button>
-                    <button href="" class="hover:text-teal-400  " onclick="ersetzeSize(this)">42</button>
-                    <button href="" class="hover:text-teal-400  " onclick="ersetzeSize(this)">43</button>
-                    <button href="" class="hover:text-teal-400  " onclick="ersetzeSize(this)">44</button>
-                  </ul>
-                </div>
-              </div>
-
-
-              <div class="div-container ">
-
-            
-            <h2 class="  p-2" id="oldcolor">Color
+          <h2 class="  p-2" id="oldcolor">Color
+         
+          </h2>
+          <span class="material-symbols-outlined color-btn ">
+            expand_more
+            </span>
            
-            </h2>
-            <span class="material-symbols-outlined color-btn ">
-              expand_more
-              </span>
-             
 
-            <div class=" content  hidden relative  z-50  " id="myCOLOR">
-              
-              <ul class="  border-solid border-2 border-teal-600 Colors  w-full   grid overflow-auto h-[100px]  absolute justify-center text-2xl  space-y-5  bg-slate-800 rounded-br-xl p-4  z-50 text-white   ">
-                <button href="" class="hover:text-teal-400  " onclick="ersetzeElement(this)">Blue/Sky</button>
-                <button href="" class="hover:text-teal-400" onclick="ersetzeElement(this)">Red</button>
-                <button href="" class="hover:text-teal-400"onclick="ersetzeElement(this)">White/Black</button>
-                <button href="" class="hover:text-teal-400"onclick="ersetzeElement(this)">Pink</button>
-                <button href="" class="hover:text-teal-400"onclick="ersetzeElement(this)">White/Orange</button>
-               
-              </ul>
-            </div>
-          </div>
-          </div>
-          <div class="div-container flex relative bg-slate-900 ">
-       
-          <button type="button"   class=" w-full purchase-btn    text-2xl sm:text-4xl p-3 text-white hover:text-teal-500 tracking-[7px] Buy "> Add To Card   
-            <span class="material-symbols-outlined ">
-              shopping_cart    
-              
-              </span>  
-            </button>
-            <span class=" content material-symbols-outlined  text-teal-500 bg-gray-900 mx-[82%] my-[5%]  absolute sm:mx-[75%] text-5xl sm:my-[2%] done " id="purchased">
-              done
-              </span>
-          </div>
+          <div class=" content  hidden relative  z-50  " id="myCOLOR">
             
+            <ul class="  border-solid border-2 border-teal-600 Colors  w-full   grid overflow-auto h-[100px]  absolute justify-center text-2xl  space-y-5  bg-slate-800 rounded-br-xl p-4  z-50 text-white   ">
+              <button href="" class="hover:text-teal-400  " onclick="ersetzeColor(this)">Blue/Sky</button>
+              <button href="" class="hover:text-teal-400" onclick="ersetzeColor(this)">Red</button>
+              <button href="" class="hover:text-teal-400"onclick="ersetzeColor(this)">White/Black</button>
+              <button href="" class="hover:text-teal-400"onclick="ersetzeColor(this)">Pink</button>
+              <button href="" class="hover:text-teal-400"onclick="ersetzeColor(this)">White/Orange</button>
+             
+            </ul>
+          </div>
+        </div>
+        </div>
+        <div class="div-container flex relative bg-slate-900 ">
+     
+        <button type="button"   class=" w-full purchase-btn    text-2xl sm:text-4xl p-3 text-white hover:text-teal-500 tracking-[7px] Buy "> Add To Card   
+          <span class="material-symbols-outlined ">
+            shopping_cart    
+            
+            </span>  
+          </button>
+          <span class=" content material-symbols-outlined  text-teal-500 bg-gray-900 mx-[82%] my-[5%]  absolute sm:mx-[75%] text-5xl sm:my-[2%] done " id="purchased">
+            done
+            </span>
+        </div>
+          
+</div>
+ <!--Product-->
+ <div class="  grid  justify-center p-4 m-2  backdrop-blur-lg    drop-shadow-2xl hover:translate-y-[-4px] transition-transform filterable yellow  ">
+    
+  <div class=" bg-slate-5 div-container   prod container group relative  rounded-t-3xl group ">
+   
+    <span  class="  content toggle-heart  material-symbols-outlined group-hover:translate-x-[-2px] Heart  transition-[0.8s]  absolute m-auto   sm:ml-[93%] ml-[88%]  p-[0.5%]    z-10 text-red-500 sm:invisible hover:translate-y-[-2px] cursor-pointer text-3xl  group-hover:visible heart-like   ">
+      favorite
+      </span>
+   
+      <a href="#">
+    <img src="Images/snk/nike-g4eced0784_1920.jpg" loading="lazy"  alt="" class="  w-full h-[300px] sm:w-[550px] sm:h-[630px] object-cover rounded-t-2xl  shadow-xl drop-shadow-xl group " >
+  </a>
   </div>
 
-    <!--Product-->
-    <div class="  grid  justify-center p-4 m-2  backdrop-blur-lg    drop-shadow-2xl hover:translate-y-[-4px] transition-transform  filterable red blue sky  ">
-    
-      <div class=" bg-slate-5 div-container   prod container group relative  rounded-t-3xl group ">
-       
-        <span  class="  content toggle-heart  material-symbols-outlined group-hover:translate-x-[-2px] Heart  transition-[0.8s]  absolute m-auto   sm:ml-[93%] ml-[88%]  p-[0.5%]    z-10 text-red-500 sm:invisible hover:translate-y-[-2px] cursor-pointer text-3xl  group-hover:visible heart-like   ">
-          favorite
-          </span>
-       
-          <a href="#">
-        <img src="Images/snk/branislav-belko-lJ7iAZxplpc-unsplash.jpg" loading="lazy"  alt="" class="  w-full h-[300px] sm:w-[550px] sm:h-[630px] object-cover rounded-t-2xl  shadow-xl drop-shadow-xl group " >
-      </a>
-      </div>
-   
-        <div class="  text-blue-950 text-2xl space-y-5 p-2 bg-slate-100 pt-10  ">
-            <p class="text-center  ">Nike Air Jordan Sneaker</p>
-            <p class="text-center font-bold text-4xl  py-2    " >90€</p> 
+    <div class="  text-blue-950 text-2xl space-y-5 p-2 bg-slate-100 pt-10  ">
+        <p class="text-center  ">Nike Air Jordan Sneaker</p>
+        <p class="text-center font-bold text-4xl  py-2    " >90€</p> 
+        
+
+    </div>
+
+    <div class="  grid grid-cols-2 text-center text-2xl  justify-center text-blue-950 bg-slate-100  ">
+      <div class=" div-container">
+            <h2 class="  p-2" id="oldsize">Size   
+              <button  class="  ">
+           
+              </button> 
             
-  
-        </div>
-  
-        <div class="  grid grid-cols-2 text-center text-2xl  justify-center text-blue-950 bg-slate-100  ">
-          <div class=" div-container">
-                <h2 class="  p-2" id="oldsize">Size   
-                  <button  class="  ">
-               
-                  </button> 
-                
-                </h2>
-                <span class="  size-btn material-symbols-outlined">
-                  expand_more
-                  </span>
-  
-                <div class="  hidden  transition-opacity duration-300 content relative" id="mySIZE" >
-                    <ul class="Size w-full border-solid ease-in-out border-2 border-teal-600 overflow-auto h-[100px] grid justify-center absolute   space-y-5  bg-slate-800 rounded-bl-xl p-4  z-50 text-white " id="menuList">
-                      <button href="" class="hover:text-teal-400   " onclick="ersetzeSize(this)">37</button>
-                      <button href="" class="hover:text-teal-400 " onclick="ersetzeSize(this)">38</button>
-                      <button href="" class="hover:text-teal-400  " onclick="ersetzeSize(this)">39</button>
-                      <button href="" class="hover:text-teal-400  " onclick="ersetzeSize(this)">40</button>
-                      <button href="" class="hover:text-teal-400  " onclick="ersetzeSize(this)">41</button>
-                      <button href="" class="hover:text-teal-400  " onclick="ersetzeSize(this)">42</button>
-                      <button href="" class="hover:text-teal-400  " onclick="ersetzeSize(this)">43</button>
-                      <button href="" class="hover:text-teal-400  " onclick="ersetzeSize(this)">44</button>
-                    </ul>
-                  </div>
-                </div>
-  
-  
-                <div class="div-container ">
-  
-              
-              <h2 class="  p-2" id="oldcolor">Color
-             
-              </h2>
-              <span class="material-symbols-outlined color-btn ">
-                expand_more
-                </span>
-               
-  
-              <div class=" content  hidden relative  z-50  " id="myCOLOR">
-                
-                <ul class="  border-solid border-2 border-teal-600 Colors  w-full   grid overflow-auto h-[100px]  absolute justify-center text-2xl  space-y-5  bg-slate-800 rounded-br-xl p-4  z-50 text-white   ">
-                  <button href="" class="hover:text-teal-400  " onclick="ersetzeElement(this)">Blue/Sky</button>
-                  <button href="" class="hover:text-teal-400" onclick="ersetzeElement(this)">Red</button>
-                  <button href="" class="hover:text-teal-400"onclick="ersetzeElement(this)">White/Black</button>
-                  <button href="" class="hover:text-teal-400"onclick="ersetzeElement(this)">Pink</button>
-                  <button href="" class="hover:text-teal-400"onclick="ersetzeElement(this)">White/Orange</button>
-                 
+            </h2>
+            <span class="  size-btn material-symbols-outlined">
+              expand_more
+              </span>
+
+            <div class="  hidden  transition-opacity duration-300 content relative" id="mySIZE" >
+                <ul class="Size w-full border-solid ease-in-out border-2 border-teal-600 overflow-auto h-[100px] grid justify-center absolute   space-y-5  bg-slate-800 rounded-bl-xl p-4  z-50 text-white " id="menuList">
+                  <button href="" class="hover:text-teal-400   " onclick="ersetzeSize(this)">37</button>
+                  <button href="" class="hover:text-teal-400 " onclick="ersetzeSize(this)">38</button>
+                  <button href="" class="hover:text-teal-400  " onclick="ersetzeSize(this)">39</button>
+                  <button href="" class="hover:text-teal-400  " onclick="ersetzeSize(this)">40</button>
+                  <button href="" class="hover:text-teal-400  " onclick="ersetzeSize(this)">41</button>
+                  <button href="" class="hover:text-teal-400  " onclick="ersetzeSize(this)">42</button>
+                  <button href="" class="hover:text-teal-400  " onclick="ersetzeSize(this)">43</button>
+                  <button href="" class="hover:text-teal-400  " onclick="ersetzeSize(this)">44</button>
                 </ul>
               </div>
             </div>
-            </div>
-            <div class="div-container flex relative bg-slate-900 ">
-         
-            <button type="button"   class=" w-full purchase-btn    text-2xl sm:text-4xl p-3 text-white hover:text-teal-500 tracking-[7px] Buy "> Add To Card   
-              <span class="material-symbols-outlined ">
-                shopping_cart    
-                
-                </span>  
-              </button>
-              <span class=" content material-symbols-outlined  text-teal-500 bg-gray-900 mx-[82%] my-[5%]  absolute sm:mx-[75%] text-5xl sm:my-[2%] done " id="purchased">
-                done
-                </span>
-            </div>
-              
-    </div>
 
-      <!--Product-->
-  <div class="  grid  justify-center p-4 m-2  backdrop-blur-lg    drop-shadow-2xl hover:translate-y-[-4px] transition-transform  filterable blue  ">
-    
-    <div class=" bg-slate-5 div-container   prod container group relative  rounded-t-3xl group ">
-     
-      <span  class="  content toggle-heart  material-symbols-outlined group-hover:translate-x-[-2px] Heart  transition-[0.8s]  absolute m-auto   sm:ml-[93%] ml-[88%]  p-[0.5%]    z-10 text-red-500 sm:invisible hover:translate-y-[-2px] cursor-pointer text-3xl  group-hover:visible heart-like   ">
-        favorite
-        </span>
-     
-        <a href="#">
-      <img src="Images/snk/branislav-belko-lJ7iAZxplpc-unsplash.jpg" loading="lazy"  alt="" class="  w-full h-[300px] sm:w-[550px] sm:h-[630px] object-cover rounded-t-2xl  shadow-xl drop-shadow-xl group " >
-    </a>
-    </div>
- 
-      <div class="  text-blue-950 text-2xl space-y-5 p-2 bg-slate-100 pt-10  ">
-          <p class="text-center  ">Nike Air Jordan Sneaker</p>
-          <p class="text-center font-bold text-4xl  py-2    " >90€</p> 
+
+            <div class="div-container ">
+
           
-
-      </div>
-
-      <div class="  grid grid-cols-2 text-center text-2xl  justify-center text-blue-950 bg-slate-100  ">
-        <div class=" div-container">
-              <h2 class="  p-2" id="oldsize">Size   
-                <button  class="  ">
-             
-                </button> 
-              
-              </h2>
-              <span class="  size-btn material-symbols-outlined">
-                expand_more
-                </span>
-
-              <div class="  hidden  transition-opacity duration-300 content relative" id="mySIZE" >
-                  <ul class="Size w-full border-solid ease-in-out border-2 border-teal-600 overflow-auto h-[100px] grid justify-center absolute   space-y-5  bg-slate-800 rounded-bl-xl p-4  z-50 text-white " id="menuList">
-                    <button href="" class="hover:text-teal-400   " onclick="ersetzeSize(this)">37</button>
-                    <button href="" class="hover:text-teal-400 " onclick="ersetzeSize(this)">38</button>
-                    <button href="" class="hover:text-teal-400  " onclick="ersetzeSize(this)">39</button>
-                    <button href="" class="hover:text-teal-400  " onclick="ersetzeSize(this)">40</button>
-                    <button href="" class="hover:text-teal-400  " onclick="ersetzeSize(this)">41</button>
-                    <button href="" class="hover:text-teal-400  " onclick="ersetzeSize(this)">42</button>
-                    <button href="" class="hover:text-teal-400  " onclick="ersetzeSize(this)">43</button>
-                    <button href="" class="hover:text-teal-400  " onclick="ersetzeSize(this)">44</button>
-                  </ul>
-                </div>
-              </div>
-
-
-              <div class="div-container ">
-
-            
-            <h2 class="  p-2" id="oldcolor">Color
+          <h2 class="  p-2" id="oldcolor">Color
+         
+          </h2>
+          <span class="material-symbols-outlined color-btn ">
+            expand_more
+            </span>
            
-            </h2>
-            <span class="material-symbols-outlined color-btn ">
-              expand_more
-              </span>
-             
 
-            <div class=" content  hidden relative  z-50  " id="myCOLOR">
-              
-              <ul class="  border-solid border-2 border-teal-600 Colors  w-full   grid overflow-auto h-[100px]  absolute justify-center text-2xl  space-y-5  bg-slate-800 rounded-br-xl p-4  z-50 text-white   ">
-                <button href="" class="hover:text-teal-400  " onclick="ersetzeElement(this)">Blue/Sky</button>
-                <button href="" class="hover:text-teal-400" onclick="ersetzeElement(this)">Red</button>
-                <button href="" class="hover:text-teal-400"onclick="ersetzeElement(this)">White/Black</button>
-                <button href="" class="hover:text-teal-400"onclick="ersetzeElement(this)">Pink</button>
-                <button href="" class="hover:text-teal-400"onclick="ersetzeElement(this)">White/Orange</button>
-               
-              </ul>
-            </div>
-          </div>
-          </div>
-          <div class="div-container flex relative bg-slate-900 ">
-       
-          <button type="button"   class=" w-full purchase-btn    text-2xl sm:text-4xl p-3 text-white hover:text-teal-500 tracking-[7px] Buy "> Add To Card   
-            <span class="material-symbols-outlined ">
-              shopping_cart    
-              
-              </span>  
-            </button>
-            <span class=" content material-symbols-outlined  text-teal-500 bg-gray-900 mx-[82%] my-[5%]  absolute sm:mx-[75%] text-5xl sm:my-[2%] done " id="purchased">
-              done
-              </span>
-          </div>
+          <div class=" content  hidden relative  z-50  " id="myCOLOR">
             
+            <ul class="  border-solid border-2 border-teal-600 Colors  w-full   grid overflow-auto h-[100px]  absolute justify-center text-2xl  space-y-5  bg-slate-800 rounded-br-xl p-4  z-50 text-white   ">
+              <button href="" class="hover:text-teal-400  " onclick="ersetzeColor(this)">Blue/Sky</button>
+              <button href="" class="hover:text-teal-400" onclick="ersetzeColor(this)">Red</button>
+              <button href="" class="hover:text-teal-400"onclick="ersetzeColor(this)">White/Black</button>
+              <button href="" class="hover:text-teal-400"onclick="ersetzeColor(this)">Pink</button>
+              <button href="" class="hover:text-teal-400"onclick="ersetzeColor(this)">White/Orange</button>
+             
+            </ul>
+          </div>
+        </div>
+        </div>
+        <div class="div-container flex relative bg-slate-900 ">
+     
+        <button type="button"   class=" w-full purchase-btn    text-2xl sm:text-4xl p-3 text-white hover:text-teal-500 tracking-[7px] Buy "> Add To Card   
+          <span class="material-symbols-outlined ">
+            shopping_cart    
+            
+            </span>  
+          </button>
+          <span class=" content material-symbols-outlined  text-teal-500 bg-gray-900 mx-[82%] my-[5%]  absolute sm:mx-[75%] text-5xl sm:my-[2%] done " id="purchased">
+            done
+            </span>
+        </div>
+          
+</div>
+
+ <!--Product-->
+ <div class="  grid  justify-center p-4 m-2  backdrop-blur-lg    drop-shadow-2xl hover:translate-y-[-4px] transition-transform filterable orange  ">
+    
+  <div class=" bg-slate-5 div-container   prod container group relative  rounded-t-3xl group ">
+   
+    <span  class="  content toggle-heart  material-symbols-outlined group-hover:translate-x-[-2px] Heart  transition-[0.8s]  absolute m-auto   sm:ml-[93%] ml-[88%]  p-[0.5%]    z-10 text-red-500 sm:invisible hover:translate-y-[-2px] cursor-pointer text-3xl  group-hover:visible heart-like   ">
+      favorite
+      </span>
+   
+      <a href="#">
+    <img src="Images/snk/ox-street-7k4TGXsQCPY-unsplash.jpg" loading="lazy"  alt="" class="  w-full h-[300px] sm:w-[550px] sm:h-[630px] object-cover rounded-t-2xl  shadow-xl drop-shadow-xl group " >
+  </a>
   </div>
 
-    <!--Product-->
-    <div class="  grid  justify-center p-4 m-2  backdrop-blur-lg    drop-shadow-2xl hover:translate-y-[-4px] transition-transform  filterable sky red  ">
-    
-      <div class=" bg-slate-5 div-container   prod container group relative  rounded-t-3xl group ">
-       
-        <span  class="  content toggle-heart  material-symbols-outlined group-hover:translate-x-[-2px] Heart  transition-[0.8s]  absolute m-auto   sm:ml-[93%] ml-[88%]  p-[0.5%]    z-10 text-red-500 sm:invisible hover:translate-y-[-2px] cursor-pointer text-3xl  group-hover:visible heart-like   ">
-          favorite
-          </span>
-       
-          <a href="#">
-        <img src="Images/snk/branislav-belko-lJ7iAZxplpc-unsplash.jpg" loading="lazy"  alt="" class="  w-full h-[300px] sm:w-[550px] sm:h-[630px] object-cover rounded-t-2xl  shadow-xl drop-shadow-xl group " >
-      </a>
-      </div>
-   
-        <div class="  text-blue-950 text-2xl space-y-5 p-2 bg-slate-100 pt-10  ">
-            <p class="text-center  ">Nike Air Jordan Sneaker</p>
-            <p class="text-center font-bold text-4xl  py-2    " >90€</p> 
+    <div class="  text-blue-950 text-2xl space-y-5 p-2 bg-slate-100 pt-10  ">
+        <p class="text-center  ">Nike Air Jordan Sneaker</p>
+        <p class="text-center font-bold text-4xl  py-2    " >90€</p> 
+        
+
+    </div>
+
+    <div class="  grid grid-cols-2 text-center text-2xl  justify-center text-blue-950 bg-slate-100  ">
+      <div class=" div-container">
+            <h2 class="  p-2" id="oldsize">Size   
+              <button  class="  ">
+           
+              </button> 
             
-  
-        </div>
-  
-        <div class="  grid grid-cols-2 text-center text-2xl  justify-center text-blue-950 bg-slate-100  ">
-          <div class=" div-container">
-                <h2 class="  p-2" id="oldsize">Size   
-                  <button  class="  ">
-               
-                  </button> 
-                
-                </h2>
-                <span class="  size-btn material-symbols-outlined">
-                  expand_more
-                  </span>
-  
-                <div class="  hidden  transition-opacity duration-300 content relative" id="mySIZE" >
-                    <ul class="Size w-full border-solid ease-in-out border-2 border-teal-600 overflow-auto h-[100px] grid justify-center absolute   space-y-5  bg-slate-800 rounded-bl-xl p-4  z-50 text-white " id="menuList">
-                      <button href="" class="hover:text-teal-400   " onclick="ersetzeSize(this)">37</button>
-                      <button href="" class="hover:text-teal-400 " onclick="ersetzeSize(this)">38</button>
-                      <button href="" class="hover:text-teal-400  " onclick="ersetzeSize(this)">39</button>
-                      <button href="" class="hover:text-teal-400  " onclick="ersetzeSize(this)">40</button>
-                      <button href="" class="hover:text-teal-400  " onclick="ersetzeSize(this)">41</button>
-                      <button href="" class="hover:text-teal-400  " onclick="ersetzeSize(this)">42</button>
-                      <button href="" class="hover:text-teal-400  " onclick="ersetzeSize(this)">43</button>
-                      <button href="" class="hover:text-teal-400  " onclick="ersetzeSize(this)">44</button>
-                    </ul>
-                  </div>
-                </div>
-  
-  
-                <div class="div-container ">
-  
-              
-              <h2 class="  p-2" id="oldcolor">Color
-             
-              </h2>
-              <span class="material-symbols-outlined color-btn ">
-                expand_more
-                </span>
-               
-  
-              <div class=" content  hidden relative  z-50  " id="myCOLOR">
-                
-                <ul class="  border-solid border-2 border-teal-600 Colors  w-full   grid overflow-auto h-[100px]  absolute justify-center text-2xl  space-y-5  bg-slate-800 rounded-br-xl p-4  z-50 text-white   ">
-                  <button href="" class="hover:text-teal-400  " onclick="ersetzeElement(this)">Blue/Sky</button>
-                  <button href="" class="hover:text-teal-400" onclick="ersetzeElement(this)">Red</button>
-                  <button href="" class="hover:text-teal-400"onclick="ersetzeElement(this)">White/Black</button>
-                  <button href="" class="hover:text-teal-400"onclick="ersetzeElement(this)">Pink</button>
-                  <button href="" class="hover:text-teal-400"onclick="ersetzeElement(this)">White/Orange</button>
-                 
+            </h2>
+            <span class="  size-btn material-symbols-outlined">
+              expand_more
+              </span>
+
+            <div class="  hidden  transition-opacity duration-300 content relative" id="mySIZE" >
+                <ul class="Size w-full border-solid ease-in-out border-2 border-teal-600 overflow-auto h-[100px] grid justify-center absolute   space-y-5  bg-slate-800 rounded-bl-xl p-4  z-50 text-white " id="menuList">
+                  <button href="" class="hover:text-teal-400   " onclick="ersetzeSize(this)">37</button>
+                  <button href="" class="hover:text-teal-400 " onclick="ersetzeSize(this)">38</button>
+                  <button href="" class="hover:text-teal-400  " onclick="ersetzeSize(this)">39</button>
+                  <button href="" class="hover:text-teal-400  " onclick="ersetzeSize(this)">40</button>
+                  <button href="" class="hover:text-teal-400  " onclick="ersetzeSize(this)">41</button>
+                  <button href="" class="hover:text-teal-400  " onclick="ersetzeSize(this)">42</button>
+                  <button href="" class="hover:text-teal-400  " onclick="ersetzeSize(this)">43</button>
+                  <button href="" class="hover:text-teal-400  " onclick="ersetzeSize(this)">44</button>
                 </ul>
               </div>
             </div>
-            </div>
-            <div class="div-container flex relative bg-slate-900 ">
-         
-            <button type="button"   class=" w-full purchase-btn    text-2xl sm:text-4xl p-3 text-white hover:text-teal-500 tracking-[7px] Buy "> Add To Card   
-              <span class="material-symbols-outlined ">
-                shopping_cart    
-                
-                </span>  
-              </button>
-              <span class=" content material-symbols-outlined  text-teal-500 bg-gray-900 mx-[82%] my-[5%]  absolute sm:mx-[75%] text-5xl sm:my-[2%] done " id="purchased">
-                done
-                </span>
-            </div>
-              
-    </div>
 
-      <!--Product-->
-  <div class="  grid  justify-center p-4 m-2  backdrop-blur-lg    drop-shadow-2xl hover:translate-y-[-4px] transition-transform   filterable sky ">
-    
-    <div class=" bg-slate-5 div-container   prod container group relative  rounded-t-3xl group ">
-     
-      <span  class="  content toggle-heart  material-symbols-outlined group-hover:translate-x-[-2px] Heart  transition-[0.8s]  absolute m-auto   sm:ml-[93%] ml-[88%]  p-[0.5%]    z-10 text-red-500 sm:invisible hover:translate-y-[-2px] cursor-pointer text-3xl  group-hover:visible heart-like   ">
-        favorite
-        </span>
-     
-        <a href="#">
-      <img src="Images/snk/branislav-belko-lJ7iAZxplpc-unsplash.jpg" loading="lazy"  alt="" class="  w-full h-[300px] sm:w-[550px] sm:h-[630px] object-cover rounded-t-2xl  shadow-xl drop-shadow-xl group " >
-    </a>
-    </div>
- 
-      <div class="  text-blue-950 text-2xl space-y-5 p-2 bg-slate-100 pt-10  ">
-          <p class="text-center  ">Nike Air Jordan Sneaker</p>
-          <p class="text-center font-bold text-4xl  py-2    " >90€</p> 
+
+            <div class="div-container ">
+
           
-
-      </div>
-
-      <div class="  grid grid-cols-2 text-center text-2xl  justify-center text-blue-950 bg-slate-100  ">
-        <div class=" div-container">
-              <h2 class="  p-2" id="oldsize">Size   
-                <button  class="  ">
-             
-                </button> 
-              
-              </h2>
-              <span class="  size-btn material-symbols-outlined">
-                expand_more
-                </span>
-
-              <div class="  hidden  transition-opacity duration-300 content relative" id="mySIZE" >
-                  <ul class="Size w-full border-solid ease-in-out border-2 border-teal-600 overflow-auto h-[100px] grid justify-center absolute   space-y-5  bg-slate-800 rounded-bl-xl p-4  z-50 text-white " id="menuList">
-                    <button href="" class="hover:text-teal-400   " onclick="ersetzeSize(this)">37</button>
-                    <button href="" class="hover:text-teal-400 " onclick="ersetzeSize(this)">38</button>
-                    <button href="" class="hover:text-teal-400  " onclick="ersetzeSize(this)">39</button>
-                    <button href="" class="hover:text-teal-400  " onclick="ersetzeSize(this)">40</button>
-                    <button href="" class="hover:text-teal-400  " onclick="ersetzeSize(this)">41</button>
-                    <button href="" class="hover:text-teal-400  " onclick="ersetzeSize(this)">42</button>
-                    <button href="" class="hover:text-teal-400  " onclick="ersetzeSize(this)">43</button>
-                    <button href="" class="hover:text-teal-400  " onclick="ersetzeSize(this)">44</button>
-                  </ul>
-                </div>
-              </div>
-
-
-              <div class="div-container ">
-
-            
-            <h2 class="  p-2" id="oldcolor">Color
+          <h2 class="  p-2" id="oldcolor">Color
+         
+          </h2>
+          <span class="material-symbols-outlined color-btn ">
+            expand_more
+            </span>
            
+
+          <div class=" content  hidden relative  z-50  " id="myCOLOR">
+            
+            <ul class="  border-solid border-2 border-teal-600 Colors  w-full   grid overflow-auto h-[100px]  absolute justify-center text-2xl  space-y-5  bg-slate-800 rounded-br-xl p-4  z-50 text-white   ">
+              <button href="" class="hover:text-teal-400  " onclick="ersetzeColor(this)">Blue/Sky</button>
+              <button href="" class="hover:text-teal-400" onclick="ersetzeColor(this)">Red</button>
+              <button href="" class="hover:text-teal-400"onclick="ersetzeColor(this)">White/Black</button>
+              <button href="" class="hover:text-teal-400"onclick="ersetzeColor(this)">Pink</button>
+              <button href="" class="hover:text-teal-400"onclick="ersetzeColor(this)">White/Orange</button>
+             
+            </ul>
+          </div>
+        </div>
+        </div>
+        <div class="div-container flex relative bg-slate-900 ">
+     
+        <button type="button"   class=" w-full purchase-btn    text-2xl sm:text-4xl p-3 text-white hover:text-teal-500 tracking-[7px] Buy "> Add To Card   
+          <span class="material-symbols-outlined ">
+            shopping_cart    
+            
+            </span>  
+          </button>
+          <span class=" content material-symbols-outlined  text-teal-500 bg-gray-900 mx-[82%] my-[5%]  absolute sm:mx-[75%] text-5xl sm:my-[2%] done " id="purchased">
+            done
+            </span>
+        </div>
+          
+</div>
+
+ <!--Product-->
+ <div class="  grid  justify-center p-4 m-2  backdrop-blur-lg    drop-shadow-2xl hover:translate-y-[-4px] transition-transform filterable blue black white  ">
+    
+  <div class=" bg-slate-5 div-container   prod container group relative  rounded-t-3xl group ">
+   
+    <span  class="  content toggle-heart  material-symbols-outlined group-hover:translate-x-[-2px] Heart  transition-[0.8s]  absolute m-auto   sm:ml-[93%] ml-[88%]  p-[0.5%]    z-10 text-red-500 sm:invisible hover:translate-y-[-2px] cursor-pointer text-3xl  group-hover:visible heart-like   ">
+      favorite
+      </span>
+   
+      <a href="#">
+      <img src="Images/snk/ox-street-BWPqHZBhMVA-unsplash.jpg" loading="lazy"  alt="" class="  w-full h-[300px] sm:w-[550px] sm:h-[630px] object-cover rounded-t-2xl  shadow-xl drop-shadow-xl group " >
+  </a>
+  </div>
+
+    <div class="  text-blue-950 text-2xl space-y-5 p-2 bg-slate-100 pt-10  ">
+        <p class="text-center  ">Nike Air Jordan Sneaker</p>
+        <p class="text-center font-bold text-4xl  py-2    " >90€</p> 
+        
+
+    </div>
+
+    <div class="  grid grid-cols-2 text-center text-2xl  justify-center text-blue-950 bg-slate-100  ">
+      <div class=" div-container">
+            <h2 class="  p-2" id="oldsize">Size   
+              <button  class="  ">
+           
+              </button> 
+            
             </h2>
-            <span class="material-symbols-outlined color-btn ">
+            <span class="  size-btn material-symbols-outlined">
               expand_more
               </span>
-             
 
-            <div class=" content  hidden relative  z-50  " id="myCOLOR">
-              
-              <ul class="  border-solid border-2 border-teal-600 Colors  w-full   grid overflow-auto h-[100px]  absolute justify-center text-2xl  space-y-5  bg-slate-800 rounded-br-xl p-4  z-50 text-white   ">
-                <button href="" class="hover:text-teal-400  " onclick="ersetzeElement(this)">Blue/Sky</button>
-                <button href="" class="hover:text-teal-400" onclick="ersetzeElement(this)">Red</button>
-                <button href="" class="hover:text-teal-400"onclick="ersetzeElement(this)">White/Black</button>
-                <button href="" class="hover:text-teal-400"onclick="ersetzeElement(this)">Pink</button>
-                <button href="" class="hover:text-teal-400"onclick="ersetzeElement(this)">White/Orange</button>
-               
-              </ul>
+            <div class="  hidden  transition-opacity duration-300 content relative" id="mySIZE" >
+                <ul class="Size w-full border-solid ease-in-out border-2 border-teal-600 overflow-auto h-[100px] grid justify-center absolute   space-y-5  bg-slate-800 rounded-bl-xl p-4  z-50 text-white " id="menuList">
+                  <button href="" class="hover:text-teal-400   " onclick="ersetzeSize(this)">37</button>
+                  <button href="" class="hover:text-teal-400 " onclick="ersetzeSize(this)">38</button>
+                  <button href="" class="hover:text-teal-400  " onclick="ersetzeSize(this)">39</button>
+                  <button href="" class="hover:text-teal-400  " onclick="ersetzeSize(this)">40</button>
+                  <button href="" class="hover:text-teal-400  " onclick="ersetzeSize(this)">41</button>
+                  <button href="" class="hover:text-teal-400  " onclick="ersetzeSize(this)">42</button>
+                  <button href="" class="hover:text-teal-400  " onclick="ersetzeSize(this)">43</button>
+                  <button href="" class="hover:text-teal-400  " onclick="ersetzeSize(this)">44</button>
+                </ul>
+              </div>
             </div>
-          </div>
-          </div>
-          <div class="div-container flex relative bg-slate-900 ">
-       
-          <button type="button"   class=" w-full purchase-btn    text-2xl sm:text-4xl p-3 text-white hover:text-teal-500 tracking-[7px] Buy "> Add To Card   
-            <span class="material-symbols-outlined ">
-              shopping_cart    
-              
-              </span>  
-            </button>
-            <span class=" content material-symbols-outlined  text-teal-500 bg-gray-900 mx-[82%] my-[5%]  absolute sm:mx-[75%] text-5xl sm:my-[2%] done " id="purchased">
-              done
-              </span>
-          </div>
+
+
+            <div class="div-container ">
+
+          
+          <h2 class="  p-2" id="oldcolor">Color
+         
+          </h2>
+          <span class="material-symbols-outlined color-btn ">
+            expand_more
+            </span>
+           
+
+          <div class=" content  hidden relative  z-50  " id="myCOLOR">
             
+            <ul class="  border-solid border-2 border-teal-600 Colors  w-full   grid overflow-auto h-[100px]  absolute justify-center text-2xl  space-y-5  bg-slate-800 rounded-br-xl p-4  z-50 text-white   ">
+              <button href="" class="hover:text-teal-400  " onclick="ersetzeColor(this)">Blue/Sky</button>
+              <button href="" class="hover:text-teal-400" onclick="ersetzeColor(this)">Red</button>
+              <button href="" class="hover:text-teal-400"onclick="ersetzeColor(this)">White/Black</button>
+              <button href="" class="hover:text-teal-400"onclick="ersetzeColor(this)">Pink</button>
+              <button href="" class="hover:text-teal-400"onclick="ersetzeColor(this)">White/Orange</button>
+             
+            </ul>
+          </div>
+        </div>
+        </div>
+        <div class="div-container flex relative bg-slate-900 ">
+     
+        <button type="button"   class=" w-full purchase-btn    text-2xl sm:text-4xl p-3 text-white hover:text-teal-500 tracking-[7px] Buy "> Add To Card   
+          <span class="material-symbols-outlined ">
+            shopping_cart    
+            
+            </span>  
+          </button>
+          <span class=" content material-symbols-outlined  text-teal-500 bg-gray-900 mx-[82%] my-[5%]  absolute sm:mx-[75%] text-5xl sm:my-[2%] done " id="purchased">
+            done
+            </span>
+        </div>
+          
+</div>
+
+ <!--Product-->
+ <div class="  grid  justify-center p-4 m-2  backdrop-blur-lg    drop-shadow-2xl hover:translate-y-[-4px] transition-transform filterable custom white  ">
+    
+  <div class=" bg-slate-5 div-container   prod container group relative  rounded-t-3xl group ">
+   
+    <span  class="  content toggle-heart  material-symbols-outlined group-hover:translate-x-[-2px] Heart  transition-[0.8s]  absolute m-auto   sm:ml-[93%] ml-[88%]  p-[0.5%]    z-10 text-red-500 sm:invisible hover:translate-y-[-2px] cursor-pointer text-3xl  group-hover:visible heart-like   ">
+      favorite
+      </span>
+   
+      <a href="#">
+      <img src="Images/snk/pexels-aman-jakhar-2048548.jpg" loading="lazy"  alt="" class="  w-full h-[300px] sm:w-[550px] sm:h-[630px] object-cover rounded-t-2xl  shadow-xl drop-shadow-xl group " >
+  </a>
   </div>
-  
+
+    <div class="  text-blue-950 text-2xl space-y-5 p-2 bg-slate-100 pt-10  ">
+        <p class="text-center  ">Nike Air Jordan Sneaker</p>
+        <p class="text-center font-bold text-4xl  py-2    " >90€</p> 
+        
+
+    </div>
+
+    <div class="  grid grid-cols-2 text-center text-2xl  justify-center text-blue-950 bg-slate-100  ">
+      <div class=" div-container">
+            <h2 class="  p-2" id="oldsize">Size   
+              <button  class="  ">
+           
+              </button> 
+            
+            </h2>
+            <span class="  size-btn material-symbols-outlined">
+              expand_more
+              </span>
+
+            <div class="  hidden  transition-opacity duration-300 content relative" id="mySIZE" >
+                <ul class="Size w-full border-solid ease-in-out border-2 border-teal-600 overflow-auto h-[100px] grid justify-center absolute   space-y-5  bg-slate-800 rounded-bl-xl p-4  z-50 text-white " id="menuList">
+                  <button href="" class="hover:text-teal-400   " onclick="ersetzeSize(this)">37</button>
+                  <button href="" class="hover:text-teal-400 " onclick="ersetzeSize(this)">38</button>
+                  <button href="" class="hover:text-teal-400  " onclick="ersetzeSize(this)">39</button>
+                  <button href="" class="hover:text-teal-400  " onclick="ersetzeSize(this)">40</button>
+                  <button href="" class="hover:text-teal-400  " onclick="ersetzeSize(this)">41</button>
+                  <button href="" class="hover:text-teal-400  " onclick="ersetzeSize(this)">42</button>
+                  <button href="" class="hover:text-teal-400  " onclick="ersetzeSize(this)">43</button>
+                  <button href="" class="hover:text-teal-400  " onclick="ersetzeSize(this)">44</button>
+                </ul>
+              </div>
+            </div>
+
+
+            <div class="div-container ">
+
+          
+          <h2 class="  p-2" id="oldcolor">Color
+         
+          </h2>
+          <span class="material-symbols-outlined color-btn ">
+            expand_more
+            </span>
+           
+
+          <div class=" content  hidden relative  z-50  " id="myCOLOR">
+            
+            <ul class="  border-solid border-2 border-teal-600 Colors  w-full   grid overflow-auto h-[100px]  absolute justify-center text-2xl  space-y-5  bg-slate-800 rounded-br-xl p-4  z-50 text-white   ">
+              <button href="" class="hover:text-teal-400  " onclick="ersetzeColor(this)">Blue/Sky</button>
+              <button href="" class="hover:text-teal-400" onclick="ersetzeColor(this)">Red</button>
+              <button href="" class="hover:text-teal-400"onclick="ersetzeColor(this)">White/Black</button>
+              <button href="" class="hover:text-teal-400"onclick="ersetzeColor(this)">Pink</button>
+              <button href="" class="hover:text-teal-400"onclick="ersetzeColor(this)">White/Orange</button>
+             
+            </ul>
+          </div>
+        </div>
+        </div>
+        <div class="div-container flex relative bg-slate-900 ">
+     
+        <button type="button"   class=" w-full purchase-btn    text-2xl sm:text-4xl p-3 text-white hover:text-teal-500 tracking-[7px] Buy "> Add To Card   
+          <span class="material-symbols-outlined ">
+            shopping_cart    
+            
+            </span>  
+          </button>
+          <span class=" content material-symbols-outlined  text-teal-500 bg-gray-900 mx-[82%] my-[5%]  absolute sm:mx-[75%] text-5xl sm:my-[2%] done " id="purchased">
+            done
+            </span>
+        </div>
+          
+</div>
+
+ <!--Product-->
+ <div class="  grid  justify-center p-4 m-2  backdrop-blur-lg    drop-shadow-2xl hover:translate-y-[-4px] transition-transform filterable  white  ">
+    
+  <div class=" bg-slate-5 div-container   prod container group relative  rounded-t-3xl group ">
+   
+    <span  class="  content toggle-heart  material-symbols-outlined group-hover:translate-x-[-2px] Heart  transition-[0.8s]  absolute m-auto   sm:ml-[93%] ml-[88%]  p-[0.5%]    z-10 text-red-500 sm:invisible hover:translate-y-[-2px] cursor-pointer text-3xl  group-hover:visible heart-like   ">
+      favorite
+      </span>
+   
+      <a href="#">
+      <img src="Images/snk/pexels-hamza-nouasria-12611630.jpg" loading="lazy"  alt="" class="  w-full h-[300px] sm:w-[550px] sm:h-[630px] object-cover rounded-t-2xl  shadow-xl drop-shadow-xl group " >
+  </a>
+  </div>
+
+    <div class="  text-blue-950 text-2xl space-y-5 p-2 bg-slate-100 pt-10  ">
+        <p class="text-center  ">Nike Air Sneaker</p>
+        <p class="text-center font-bold text-4xl  py-2    " >100€</p> 
+        
+
+    </div>
+
+    <div class="  grid grid-cols-2 text-center text-2xl  justify-center text-blue-950 bg-slate-100  ">
+      <div class=" div-container">
+            <h2 class="  p-2" id="oldsize">Size   
+              <button  class="  ">
+           
+              </button> 
+            
+            </h2>
+            <span class="  size-btn material-symbols-outlined">
+              expand_more
+              </span>
+
+            <div class="  hidden  transition-opacity duration-300 content relative" id="mySIZE" >
+                <ul class="Size w-full border-solid ease-in-out border-2 border-teal-600 overflow-auto h-[100px] grid justify-center absolute   space-y-5  bg-slate-800 rounded-bl-xl p-4  z-50 text-white " id="menuList">
+                  <button href="" class="hover:text-teal-400   " onclick="ersetzeSize(this)">37</button>
+                  <button href="" class="hover:text-teal-400 " onclick="ersetzeSize(this)">38</button>
+                  <button href="" class="hover:text-teal-400  " onclick="ersetzeSize(this)">39</button>
+                  <button href="" class="hover:text-teal-400  " onclick="ersetzeSize(this)">40</button>
+                  <button href="" class="hover:text-teal-400  " onclick="ersetzeSize(this)">41</button>
+                  <button href="" class="hover:text-teal-400  " onclick="ersetzeSize(this)">42</button>
+                  <button href="" class="hover:text-teal-400  " onclick="ersetzeSize(this)">43</button>
+                  <button href="" class="hover:text-teal-400  " onclick="ersetzeSize(this)">44</button>
+                </ul>
+              </div>
+            </div>
+
+
+            <div class="div-container ">
+
+          
+          <h2 class="  p-2" id="oldcolor">Color
+         
+          </h2>
+          <span class="material-symbols-outlined color-btn ">
+            expand_more
+            </span>
+           
+
+          <div class=" content  hidden relative  z-50  " id="myCOLOR">
+            
+            <ul class="  border-solid border-2 border-teal-600 Colors  w-full   grid overflow-auto h-[100px]  absolute justify-center text-2xl  space-y-5  bg-slate-800 rounded-br-xl p-4  z-50 text-white   ">
+              <button href="" class="hover:text-teal-400  " onclick="ersetzeColor(this)">Blue/Sky</button>
+              <button href="" class="hover:text-teal-400" onclick="ersetzeColor(this)">Red</button>
+              <button href="" class="hover:text-teal-400"onclick="ersetzeColor(this)">White/Black</button>
+              <button href="" class="hover:text-teal-400"onclick="ersetzeColor(this)">Pink</button>
+              <button href="" class="hover:text-teal-400"onclick="ersetzeColor(this)">White/Orange</button>
+             
+            </ul>
+          </div>
+        </div>
+        </div>
+        <div class="div-container flex relative bg-slate-900 ">
+     
+        <button type="button"   class=" w-full purchase-btn    text-2xl sm:text-4xl p-3 text-white hover:text-teal-500 tracking-[7px] Buy "> Add To Card   
+          <span class="material-symbols-outlined ">
+            shopping_cart    
+            
+            </span>  
+          </button>
+          <span class=" content material-symbols-outlined  text-teal-500 bg-gray-900 mx-[82%] my-[5%]  absolute sm:mx-[75%] text-5xl sm:my-[2%] done " id="purchased">
+            done
+            </span>
+        </div>
+          
+</div>
+
+ <!--Product-->
+ <div class="  grid  justify-center p-4 m-2  backdrop-blur-lg    drop-shadow-2xl hover:translate-y-[-4px] transition-transform filterable blue white  ">
+    
+  <div class=" bg-slate-5 div-container   prod container group relative  rounded-t-3xl group ">
+   
+    <span  class="  content toggle-heart  material-symbols-outlined group-hover:translate-x-[-2px] Heart  transition-[0.8s]  absolute m-auto   sm:ml-[93%] ml-[88%]  p-[0.5%]    z-10 text-red-500 sm:invisible hover:translate-y-[-2px] cursor-pointer text-3xl  group-hover:visible heart-like   ">
+      favorite
+      </span>
+   
+      <a href="#">
+      <img src="Images/snk/pexels-jordan-hyde-1070360.jpg" loading="lazy"  alt="" class="  w-full h-[300px] sm:w-[550px] sm:h-[630px] object-cover rounded-t-2xl  shadow-xl drop-shadow-xl group " >
+  </a>
+  </div>
+
+    <div class="  text-blue-950 text-2xl space-y-5 p-2 bg-slate-100 pt-10  ">
+        <p class="text-center  ">Nike Air Sneaker</p>
+        <p class="text-center font-bold text-4xl  py-2    " >100€</p> 
+        
+
+    </div>
+
+    <div class="  grid grid-cols-2 text-center text-2xl  justify-center text-blue-950 bg-slate-100  ">
+      <div class=" div-container">
+            <h2 class="  p-2" id="oldsize">Size   
+              <button  class="  ">
+           
+              </button> 
+            
+            </h2>
+            <span class="  size-btn material-symbols-outlined">
+              expand_more
+              </span>
+
+            <div class="  hidden  transition-opacity duration-300 content relative" id="mySIZE" >
+                <ul class="Size w-full border-solid ease-in-out border-2 border-teal-600 overflow-auto h-[100px] grid justify-center absolute   space-y-5  bg-slate-800 rounded-bl-xl p-4  z-50 text-white " id="menuList">
+                  <button href="" class="hover:text-teal-400   " onclick="ersetzeSize(this)">37</button>
+                  <button href="" class="hover:text-teal-400 " onclick="ersetzeSize(this)">38</button>
+                  <button href="" class="hover:text-teal-400  " onclick="ersetzeSize(this)">39</button>
+                  <button href="" class="hover:text-teal-400  " onclick="ersetzeSize(this)">40</button>
+                  <button href="" class="hover:text-teal-400  " onclick="ersetzeSize(this)">41</button>
+                  <button href="" class="hover:text-teal-400  " onclick="ersetzeSize(this)">42</button>
+                  <button href="" class="hover:text-teal-400  " onclick="ersetzeSize(this)">43</button>
+                  <button href="" class="hover:text-teal-400  " onclick="ersetzeSize(this)">44</button>
+                </ul>
+              </div>
+            </div>
+
+
+            <div class="div-container ">
+
+          
+          <h2 class="  p-2" id="oldcolor">Color
+         
+          </h2>
+          <span class="material-symbols-outlined color-btn ">
+            expand_more
+            </span>
+           
+
+          <div class=" content  hidden relative  z-50  " id="myCOLOR">
+            
+            <ul class="  border-solid border-2 border-teal-600 Colors  w-full   grid overflow-auto h-[100px]  absolute justify-center text-2xl  space-y-5  bg-slate-800 rounded-br-xl p-4  z-50 text-white   ">
+              <button href="" class="hover:text-teal-400  " onclick="ersetzeColor(this)">Blue/Sky</button>
+              <button href="" class="hover:text-teal-400" onclick="ersetzeColor(this)">Red</button>
+              <button href="" class="hover:text-teal-400"onclick="ersetzeColor(this)">White/Black</button>
+              <button href="" class="hover:text-teal-400"onclick="ersetzeColor(this)">Pink</button>
+              <button href="" class="hover:text-teal-400"onclick="ersetzeColor(this)">White/Orange</button>
+             
+            </ul>
+          </div>
+        </div>
+        </div>
+        <div class="div-container flex relative bg-slate-900 ">
+     
+        <button type="button"   class=" w-full purchase-btn    text-2xl sm:text-4xl p-3 text-white hover:text-teal-500 tracking-[7px] Buy "> Add To Card   
+          <span class="material-symbols-outlined ">
+            shopping_cart    
+            
+            </span>  
+          </button>
+          <span class=" content material-symbols-outlined  text-teal-500 bg-gray-900 mx-[82%] my-[5%]  absolute sm:mx-[75%] text-5xl sm:my-[2%] done " id="purchased">
+            done
+            </span>
+        </div>
+          
+</div>
+
+ <!--Product-->
+ <div class="  grid  justify-center p-4 m-2  backdrop-blur-lg    drop-shadow-2xl hover:translate-y-[-4px] transition-transform filterable black red  ">
+    
+  <div class=" bg-slate-5 div-container   prod container group relative  rounded-t-3xl group ">
+   
+    <span  class="  content toggle-heart  material-symbols-outlined group-hover:translate-x-[-2px] Heart  transition-[0.8s]  absolute m-auto   sm:ml-[93%] ml-[88%]  p-[0.5%]    z-10 text-red-500 sm:invisible hover:translate-y-[-2px] cursor-pointer text-3xl  group-hover:visible heart-like   ">
+      favorite
+      </span>
+   
+      <a href="#">
+      <img src="Images/snk/pexels-ox-street-6050911.jpg" loading="lazy"  alt="" class="  w-full h-[300px] sm:w-[550px] sm:h-[630px] object-cover rounded-t-2xl  shadow-xl drop-shadow-xl group " >
+  </a>
+  </div>
+
+    <div class="  text-blue-950 text-2xl space-y-5 p-2 bg-slate-100 pt-10  ">
+        <p class="text-center  ">Nike Air Sneaker</p>
+        <p class="text-center font-bold text-4xl  py-2    " >70€</p> 
+        
+
+    </div>
+
+    <div class="  grid grid-cols-2 text-center text-2xl  justify-center text-blue-950 bg-slate-100  ">
+      <div class=" div-container">
+            <h2 class="  p-2" id="oldsize">Size   
+              <button  class="  ">
+           
+              </button> 
+            
+            </h2>
+            <span class="  size-btn material-symbols-outlined">
+              expand_more
+              </span>
+
+            <div class="  hidden  transition-opacity duration-300 content relative" id="mySIZE" >
+                <ul class="Size w-full border-solid ease-in-out border-2 border-teal-600 overflow-auto h-[100px] grid justify-center absolute   space-y-5  bg-slate-800 rounded-bl-xl p-4  z-50 text-white " id="menuList">
+                  <button href="" class="hover:text-teal-400   " onclick="ersetzeSize(this)">37</button>
+                  <button href="" class="hover:text-teal-400 " onclick="ersetzeSize(this)">38</button>
+                  <button href="" class="hover:text-teal-400  " onclick="ersetzeSize(this)">39</button>
+                  <button href="" class="hover:text-teal-400  " onclick="ersetzeSize(this)">40</button>
+                  <button href="" class="hover:text-teal-400  " onclick="ersetzeSize(this)">41</button>
+                  <button href="" class="hover:text-teal-400  " onclick="ersetzeSize(this)">42</button>
+                  <button href="" class="hover:text-teal-400  " onclick="ersetzeSize(this)">43</button>
+                  <button href="" class="hover:text-teal-400  " onclick="ersetzeSize(this)">44</button>
+                </ul>
+              </div>
+            </div>
+
+
+            <div class="div-container ">
+
+          
+          <h2 class="  p-2" id="oldcolor">Color
+         
+          </h2>
+          <span class="material-symbols-outlined color-btn ">
+            expand_more
+            </span>
+           
+
+          <div class=" content  hidden relative  z-50  " id="myCOLOR">
+            
+            <ul class="  border-solid border-2 border-teal-600 Colors  w-full   grid overflow-auto h-[100px]  absolute justify-center text-2xl  space-y-5  bg-slate-800 rounded-br-xl p-4  z-50 text-white   ">
+              <button href="" class="hover:text-teal-400  " onclick="ersetzeColor(this)">Blue/Sky</button>
+              <button href="" class="hover:text-teal-400" onclick="ersetzeColor(this)">Red</button>
+              <button href="" class="hover:text-teal-400"onclick="ersetzeColor(this)">White/Black</button>
+              <button href="" class="hover:text-teal-400"onclick="ersetzeColor(this)">Pink</button>
+              <button href="" class="hover:text-teal-400"onclick="ersetzeColor(this)">White/Orange</button>
+             
+            </ul>
+          </div>
+        </div>
+        </div>
+        <div class="div-container flex relative bg-slate-900 ">
+     
+        <button type="button"   class=" w-full purchase-btn    text-2xl sm:text-4xl p-3 text-white hover:text-teal-500 tracking-[7px] Buy "> Add To Card   
+          <span class="material-symbols-outlined ">
+            shopping_cart    
+            
+            </span>  
+          </button>
+          <span class=" content material-symbols-outlined  text-teal-500 bg-gray-900 mx-[82%] my-[5%]  absolute sm:mx-[75%] text-5xl sm:my-[2%] done " id="purchased">
+            done
+            </span>
+        </div>
+          
+</div>
+
+ <!--Product-->
+ <div class="  grid  justify-center p-4 m-2  backdrop-blur-lg    drop-shadow-2xl hover:translate-y-[-4px] transition-transform filterable black gray ">
+    
+  <div class=" bg-slate-5 div-container   prod container group relative  rounded-t-3xl group ">
+   
+    <span  class="  content toggle-heart  material-symbols-outlined group-hover:translate-x-[-2px] Heart  transition-[0.8s]  absolute m-auto   sm:ml-[93%] ml-[88%]  p-[0.5%]    z-10 text-red-500 sm:invisible hover:translate-y-[-2px] cursor-pointer text-3xl  group-hover:visible heart-like   ">
+      favorite
+      </span>
+   
+      <a href="#">
+      <img src="Images/snk/pexels-ox-street-6540927.jpg" loading="lazy"  alt="" class="  w-full h-[300px] sm:w-[550px] sm:h-[630px] object-cover rounded-t-2xl  shadow-xl drop-shadow-xl group " >
+  </a>
+  </div>
+
+    <div class="  text-blue-950 text-2xl space-y-5 p-2 bg-slate-100 pt-10  ">
+        <p class="text-center  ">Nike Air Sneaker</p>
+        <p class="text-center font-bold text-4xl  py-2    " >70€</p> 
+        
+
+    </div>
+
+    <div class="  grid grid-cols-2 text-center text-2xl  justify-center text-blue-950 bg-slate-100  ">
+      <div class=" div-container">
+            <h2 class="  p-2" id="oldsize">Size   
+              <button  class="  ">
+           
+              </button> 
+            
+            </h2>
+            <span class="  size-btn material-symbols-outlined">
+              expand_more
+              </span>
+
+            <div class="  hidden  transition-opacity duration-300 content relative" id="mySIZE" >
+                <ul class="Size w-full border-solid ease-in-out border-2 border-teal-600 overflow-auto h-[100px] grid justify-center absolute   space-y-5  bg-slate-800 rounded-bl-xl p-4  z-50 text-white " id="menuList">
+                  <button href="" class="hover:text-teal-400   " onclick="ersetzeSize(this)">37</button>
+                  <button href="" class="hover:text-teal-400 " onclick="ersetzeSize(this)">38</button>
+                  <button href="" class="hover:text-teal-400  " onclick="ersetzeSize(this)">39</button>
+                  <button href="" class="hover:text-teal-400  " onclick="ersetzeSize(this)">40</button>
+                  <button href="" class="hover:text-teal-400  " onclick="ersetzeSize(this)">41</button>
+                  <button href="" class="hover:text-teal-400  " onclick="ersetzeSize(this)">42</button>
+                  <button href="" class="hover:text-teal-400  " onclick="ersetzeSize(this)">43</button>
+                  <button href="" class="hover:text-teal-400  " onclick="ersetzeSize(this)">44</button>
+                </ul>
+              </div>
+            </div>
+
+
+            <div class="div-container ">
+
+          
+          <h2 class="  p-2" id="oldcolor">Color
+         
+          </h2>
+          <span class="material-symbols-outlined color-btn ">
+            expand_more
+            </span>
+           
+
+          <div class=" content  hidden relative  z-50  " id="myCOLOR">
+            
+            <ul class="  border-solid border-2 border-teal-600 Colors  w-full   grid overflow-auto h-[100px]  absolute justify-center text-2xl  space-y-5  bg-slate-800 rounded-br-xl p-4  z-50 text-white   ">
+              <button href="" class="hover:text-teal-400  " onclick="ersetzeColor(this)">Blue/Sky</button>
+              <button href="" class="hover:text-teal-400" onclick="ersetzeColor(this)">Red</button>
+              <button href="" class="hover:text-teal-400"onclick="ersetzeColor(this)">White/Black</button>
+              <button href="" class="hover:text-teal-400"onclick="ersetzeColor(this)">Pink</button>
+              <button href="" class="hover:text-teal-400"onclick="ersetzeColor(this)">White/Orange</button>
+             
+            </ul>
+          </div>
+        </div>
+        </div>
+        <div class="div-container flex relative bg-slate-900 ">
+     
+        <button type="button"   class=" w-full purchase-btn    text-2xl sm:text-4xl p-3 text-white hover:text-teal-500 tracking-[7px] Buy "> Add To Card   
+          <span class="material-symbols-outlined ">
+            shopping_cart    
+            
+            </span>  
+          </button>
+          <span class=" content material-symbols-outlined  text-teal-500 bg-gray-900 mx-[82%] my-[5%]  absolute sm:mx-[75%] text-5xl sm:my-[2%] done " id="purchased">
+            done
+            </span>
+        </div>
+          
+</div>
+
+ <!--Product-->
+ <div class="  grid  justify-center p-4 m-2  backdrop-blur-lg    drop-shadow-2xl hover:translate-y-[-4px] transition-transform filterable  yellow pink purple ">
+    
+  <div class=" bg-slate-5 div-container   prod container group relative  rounded-t-3xl group ">
+   
+    <span  class="  content toggle-heart  material-symbols-outlined group-hover:translate-x-[-2px] Heart  transition-[0.8s]  absolute m-auto   sm:ml-[93%] ml-[88%]  p-[0.5%]    z-10 text-red-500 sm:invisible hover:translate-y-[-2px] cursor-pointer text-3xl  group-hover:visible heart-like   ">
+      favorite
+      </span>
+   
+      <a href="#">
+      <img src="Images/snk/ryan-plomp-jvoZ-Aux9aw-unsplash.jpg" loading="lazy"  alt="" class="  w-full h-[300px] sm:w-[550px] sm:h-[630px] object-cover rounded-t-2xl  shadow-xl drop-shadow-xl group " >
+  </a>
+  </div>
+
+    <div class="  text-blue-950 text-2xl space-y-5 p-2 bg-slate-100 pt-10  ">
+        <p class="text-center  ">Nike Air Sneaker</p>
+        <p class="text-center font-bold text-4xl  py-2    " >70€</p> 
+        
+
+    </div>
+
+    <div class="  grid grid-cols-2 text-center text-2xl  justify-center text-blue-950 bg-slate-100  ">
+      <div class=" div-container">
+            <h2 class="  p-2" id="oldsize">Size   
+              <button  class="  ">
+           
+              </button> 
+            
+            </h2>
+            <span class="  size-btn material-symbols-outlined">
+              expand_more
+              </span>
+
+            <div class="  hidden  transition-opacity duration-300 content relative" id="mySIZE" >
+                <ul class="Size w-full border-solid ease-in-out border-2 border-teal-600 overflow-auto h-[100px] grid justify-center absolute   space-y-5  bg-slate-800 rounded-bl-xl p-4  z-50 text-white " id="menuList">
+                  <button href="" class="hover:text-teal-400   " onclick="ersetzeSize(this)">37</button>
+                  <button href="" class="hover:text-teal-400 " onclick="ersetzeSize(this)">38</button>
+                  <button href="" class="hover:text-teal-400  " onclick="ersetzeSize(this)">39</button>
+                  <button href="" class="hover:text-teal-400  " onclick="ersetzeSize(this)">40</button>
+                  <button href="" class="hover:text-teal-400  " onclick="ersetzeSize(this)">41</button>
+                  <button href="" class="hover:text-teal-400  " onclick="ersetzeSize(this)">42</button>
+                  <button href="" class="hover:text-teal-400  " onclick="ersetzeSize(this)">43</button>
+                  <button href="" class="hover:text-teal-400  " onclick="ersetzeSize(this)">44</button>
+                </ul>
+              </div>
+            </div>
+
+
+            <div class="div-container ">
+
+          
+          <h2 class="  p-2" id="oldcolor">Color
+         
+          </h2>
+          <span class="material-symbols-outlined color-btn ">
+            expand_more
+            </span>
+           
+
+          <div class=" content  hidden relative  z-50  " id="myCOLOR">
+            
+            <ul class="  border-solid border-2 border-teal-600 Colors  w-full   grid overflow-auto h-[100px]  absolute justify-center text-2xl  space-y-5  bg-slate-800 rounded-br-xl p-4  z-50 text-white   ">
+              <button href="" class="hover:text-teal-400  " onclick="ersetzeColor(this)">Blue/Sky</button>
+              <button href="" class="hover:text-teal-400" onclick="ersetzeColor(this)">Red</button>
+              <button href="" class="hover:text-teal-400"onclick="ersetzeColor(this)">White/Black</button>
+              <button href="" class="hover:text-teal-400"onclick="ersetzeColor(this)">Pink</button>
+              <button href="" class="hover:text-teal-400"onclick="ersetzeColor(this)">White/Orange</button>
+             
+            </ul>
+          </div>
+        </div>
+        </div>
+        <div class="div-container flex relative bg-slate-900 ">
+     
+        <button type="button"   class=" w-full purchase-btn    text-2xl sm:text-4xl p-3 text-white hover:text-teal-500 tracking-[7px] Buy "> Add To Card   
+          <span class="material-symbols-outlined ">
+            shopping_cart    
+            
+            </span>  
+          </button>
+          <span class=" content material-symbols-outlined  text-teal-500 bg-gray-900 mx-[82%] my-[5%]  absolute sm:mx-[75%] text-5xl sm:my-[2%] done " id="purchased">
+            done
+            </span>
+        </div>
+          
+</div>
+
+
+
 
 </div>
 

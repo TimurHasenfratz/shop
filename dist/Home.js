@@ -68,7 +68,7 @@ function hervorhebenAuswahl(button) {
   });
 }
 
-function ersetzeElement(button) {
+function ersetzeColor(button) {
   const text = button.innerText;
 
   // get parent div of button
