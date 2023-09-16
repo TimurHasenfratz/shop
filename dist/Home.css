@@ -196,3 +196,7 @@ span{
 .selected{
   color:green !important;
 }
+
+li>button:hover{
+  color:green;
+}

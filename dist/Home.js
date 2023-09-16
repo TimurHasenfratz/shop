@@ -1,3 +1,6 @@
+
+
+
 // navbar dissapears on scrolldown and appears on scrollup
 
 var prevScrollpos = window.pageYOffset;
@@ -47,6 +50,8 @@ document.addEventListener("click", function (event) {
   }
 });
 
+//slider
+
 function prev() {
   document.getElementById("slider-container").scrollLeft -= 270;
 }
@@ -55,18 +60,14 @@ function next() {
   document.getElementById("slider-container").scrollLeft += 270;
 }
 
-function hervorhebenAuswahl(button) {
-  const ul = button.closest("ul");
-  const buttons = ul.querySelectorAll("button");
 
-  buttons.forEach((btn) => {
-    if (btn === button) {
-      btn.classList.add("selected"); // add class with color for selected button
-    } else {
-      btn.classList.remove("selected"); // remove class from button
-    }
-  });
-}
+
+
+
+
+
+
+
 
 function ersetzeColor(button) {
   const text = button.innerText;
@@ -79,8 +80,6 @@ function ersetzeColor(button) {
   alteUeberschrift.textContent = text;
 
   hervorhebenAuswahl(button);
-
-  
 }
 
 function ersetzeSize(button) {
@@ -121,5 +120,3 @@ function filterDivs(className) {
     });
   }
 }
-
-
