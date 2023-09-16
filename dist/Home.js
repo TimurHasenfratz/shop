@@ -61,7 +61,19 @@ function next() {
 }
 
 
+// selected elements turn green
+function hervorhebenAuswahl(button) {
+  const ul = button.closest("ul");
+  const buttons = ul.querySelectorAll("button");
 
+  buttons.forEach((btn) => {
+    if (btn === button) {
+      btn.classList.add("selected"); // add class with color for selected button
+    } else {
+      btn.classList.remove("selected"); // remove class from button
+    }
+  });
+}
 
 
 
