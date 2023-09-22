@@ -64,7 +64,8 @@ function next() {
 // selected elements turn green
 function hervorhebenAuswahl(button) {
   const ul = button.closest("ul");
-  const buttons = ul.querySelectorAll("button");
+  const buttons = ul.querySelectorAll("button");    
+  
 
   buttons.forEach((btn) => {
     if (btn === button) {
